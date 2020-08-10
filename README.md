@@ -1,4 +1,9 @@
-### Hi there 👋
+### Olá meu nome é Leandro Rocha :
+
+**Sou desenvolvedor Flutter e Java web**
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/leandrorochaadm/)](https://www.linkedin.com/in/leandrorochaadm/)
+[![Youtube Badge](https://img.shields.io/badge/-YouTube-c14438?style=flat-square&logo=YouTube&logoColor=white&link=https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)](https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)
 
 <!--
 **leandrorochaadm/leandrorochaadm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
