@@ -8,7 +8,6 @@ Minhas pricipais rede sociais:
 [![Youtube Badge](https://img.shields.io/badge/-YouTube-c14438?style=flat-square&logo=YouTube&logoColor=white&link=https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)](https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)
 
 <img src="https://images.vexels.com/media/users/3/166401/isolated/lists/b82aa7ac3f736dd78570dd3fa3fa9e24-icone-da-linguagem-de-programacao-java.png" height="100" width="100">
-
 <img src="https://pbs.twimg.com/profile_images/1068091214497501184/sUuU3cpS_400x400.jpg" height="100" width="100">
 
 
