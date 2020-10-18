@@ -2,14 +2,45 @@
 
 **Sou desenvolvedor Flutter e Java web** e desenvolvo aplicativos cross-platform e API REST.
 
-Minhas pricipais rede sociais:
+Minhas principais rede sociais:
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/leandrorochaadm/)](https://www.linkedin.com/in/leandrorochaadm/)
 [![Youtube Badge](https://img.shields.io/badge/-YouTube-c14438?style=flat-square&logo=YouTube&logoColor=white&link=https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)](https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)
 
 <img src="https://images.vexels.com/media/users/3/166401/isolated/lists/b82aa7ac3f736dd78570dd3fa3fa9e24-icone-da-linguagem-de-programacao-java.png" height="100" width="100"><img src="https://pbs.twimg.com/profile_images/1068091214497501184/sUuU3cpS_400x400.jpg" height="100" width="100">
+---
+### Minhas habilidades
 
+**Java**
+* Spring Boot
+<!-- * Spring Security --> 
+* Spring Data
+* JPA (Hibernate)
+* Maven
+* JUnit
+* Flyway (migrations)
+* Tomcat
+* Wildfly
+<!-- * JSF (Primefaces) -->
+* Lombok
 
+**Flutter:**
+* Mobx
+* Slidy
+* Modular
+* Dio (http)
+
+**Banco de dados:**
+* PostgreSQL
+* MySQL
+* Firebird
+* Firebase (Google)
+* SQLite (Android)
+
+**Tecnologias complementares:**
+* Git/GitFlow
+* Vim Editor
+* Heroku (PaaS na AWS)
 
 
 <!--
