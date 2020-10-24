@@ -1,27 +1,27 @@
 ### Olá meu nome é Leandro Rocha :man_technologist:
 
-**Sou desenvolvedor Flutter e Java web** e desenvolvo aplicativos cross-platform e API REST.
+**Sou desenvolvedor Flutter e Java web** e desenvolvo aplicativos Android e iOS com API REST ou Firebase.
 
 Minhas principais rede sociais:
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/leandrorochaadm/)](https://www.linkedin.com/in/leandrorochaadm/)
+[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-6633cc?style=flat-square&logo=Linkedin&logoColor=white&color=black&link=https://www.linkedin.com/in/leandrorochaadm/)](https://www.linkedin.com/in/leandrorochaadm/)
+[![Whatsapp Badge](https://img.shields.io/badge/-WhatsApp-6633cc?style=flat-square&logo=Whatsapp&logoColor=white&color=black&link=https://api.whatsapp.com/message/NREZGGL4OBHXF1)](https://api.whatsapp.com/message/NREZGGL4OBHXF1)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&color=black&link=mailto:leandrorochaadm@gmail.com)](mailto:leandrorochaadm@gmail.com)
 [![Youtube Badge](https://img.shields.io/badge/-YouTube-c14438?style=flat-square&logo=YouTube&logoColor=white&link=https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)](https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)
 
-<img src="https://images.vexels.com/media/users/3/166401/isolated/lists/b82aa7ac3f736dd78570dd3fa3fa9e24-icone-da-linguagem-de-programacao-java.png" height="100" width="100"><img src="https://pbs.twimg.com/profile_images/1068091214497501184/sUuU3cpS_400x400.jpg" height="100" width="100">
 ---
 ### Minhas habilidades
 
 **Java**
-* Spring Boot
-<!-- * Spring Security --> 
+* Quarkus
+* Spring Boot <!-- * Spring Security --> 
 * Spring Data
 * JPA (Hibernate)
 * Maven
 * JUnit
 * Flyway (migrations)
 * Tomcat
-* Wildfly
-<!-- * JSF (Primefaces) -->
+* Wildfly <!-- * JSF (Primefaces) -->
 * Lombok
 
 **Flutter:**
@@ -40,20 +40,10 @@ Minhas principais rede sociais:
 **Tecnologias complementares:**
 * Git/GitFlow
 * Vim Editor
-* Heroku (PaaS na AWS)
+* Heroku (PaaS na Amazon)
 
 
-<!--
-**leandrorochaadm/leandrorochaadm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<hr>
+<h1 align="center">
+<img alt="Duduxs" src="https://github-readme-stats.codestackr.vercel.app/api?username=leandrorochaadm&show_icons=true&hide_border=true&theme=dark" />
+</h1>
