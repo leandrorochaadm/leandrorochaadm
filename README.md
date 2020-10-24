@@ -7,7 +7,7 @@ Minhas principais rede sociais:
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-6633cc?style=flat-square&logo=Linkedin&logoColor=white&color=black&link=https://www.linkedin.com/in/leandrorochaadm/)](https://www.linkedin.com/in/leandrorochaadm/)
 [![Whatsapp Badge](https://img.shields.io/badge/-WhatsApp-6633cc?style=flat-square&logo=Whatsapp&logoColor=white&color=black&link=https://api.whatsapp.com/message/NREZGGL4OBHXF1)](https://api.whatsapp.com/message/NREZGGL4OBHXF1)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&color=black&link=mailto:leandrorochaadm@gmail.com)](mailto:leandrorochaadm@gmail.com)
-[![Youtube Badge](https://img.shields.io/badge/-YouTube-c14438?style=flat-square&logo=YouTube&logoColor=white&link=https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)](https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)
+[![Youtube Badge](https://img.shields.io/badge/-YouTube-c14438?style=flat-square&logo=YouTube&logoColor=white&color=black&link=https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)](https://www.youtube.com/channel/UC3IOIEHrxIHDeWBxAklINTA)
 
 ---
 ### Minhas habilidades
