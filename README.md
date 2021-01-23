@@ -58,15 +58,15 @@
     <img alt="Windows" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/-Bitbucket-0052CC?style=for-the-badge&logo=Bitbucket&logoColor=fff"/>
     <img alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
-    <img alt="Apache%20Tomcat" src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=for-the-badge&logo=Apache%20Tomcat&logoColor=black"/>
     <img alt="Windows" src="https://img.shields.io/badge/-jira%20software-0052CC?style=for-the-badge&logo=jira-software&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/Trello-0079BF?style=for-the-badge&logo=trello&logoColor=fff"/>
-    <img alt="Windows" src="https://img.shields.io/badge/-Neovim-57A143?style=for-the-badge&logo=Neovim&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/-Heroku-430098?style=for-the-badge&logo=Heroku&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/-IntelliJ%20IDEA-000?style=for-the-badge&logo=Intellij%20idea&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=Android%20Studio&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=Visual%20Studio&logoColor=fff"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Neovim-57A143?style=for-the-badge&logo=Neovim&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio&logoColor=fff"/>
+    <img alt="Apache%20Tomcat" src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=for-the-badge&logo=Apache%20Tomcat&logoColor=black"/>
 </p>
 <hr>
 
