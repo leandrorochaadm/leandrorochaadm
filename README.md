@@ -65,7 +65,6 @@
     <img alt="Windows" src="https://img.shields.io/badge/-Heroku-430098?style=for-the-badge&logo=Heroku&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/-IntelliJ%20IDEA-000?style=for-the-badge&logo=Intellij%20idea&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=Android%20Studio&logoColor=fff"/>
-    <img alt="Windows" src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=Android%20Studio&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=Visual%20Studio&logoColor=fff"/>
     <img alt="Windows" src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio&logoColor=fff"/>
 </p>
