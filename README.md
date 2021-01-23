@@ -15,75 +15,54 @@
 <!-- language -->
 
 
-<p>
 
 ### Frontend
 
-<img alt="CSS3" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>  
-
-<img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-
-<img alt="JS" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/Quasar-1976D2?style=for-the-badge&logo=Quasar&logoColor=fff"/>
-
 <p>
+    <img alt="CSS3" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>  
+    <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+    <img alt="JS" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+    <img alt="Windows" src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"/>
+    <img alt="Windows" src="https://img.shields.io/badge/Quasar-1976D2?style=for-the-badge&logo=Quasar&logoColor=fff"/>
+</p>
 
 ### Backend
-
-<img alt="Apache%20Tomcat" src="https://img.shields.io/badge/C%20 Sharp-239120?style=for-the-badge&logo=C%20Sharp&logoColor=fff"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/-Java-f12433?style=for-the-badge&logo=java&logoColor=fff"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/-Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=fff"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/-Go-00ADD8?style=for-the-badge&logo=Go&logoColor=fff"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/Delphi-EE1F35?style=for-the-badge&logo=Delphi&logoColor=fff"/>
+<p>
+    <img alt="Apache%20Tomcat" src="https://img.shields.io/badge/C%20 Sharp-239120?style=for-the-badge&logo=C%20Sharp&logoColor=fff"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Java-f12433?style=for-the-badge&logo=java&logoColor=fff"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=fff"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Go-00ADD8?style=for-the-badge&logo=Go&logoColor=fff"/>
+    <img alt="Windows" src="https://img.shields.io/badge/Delphi-EE1F35?style=for-the-badge&logo=Delphi&logoColor=fff"/>
+</p>
 
 ### Mobile
-
-<img alt="Windows" src="https://img.shields.io/badge/-Flutter-blue?style=for-the-badge&logo=Flutter&logoColor=white"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/-Dart-0175C2?style=for-the-badge&logo=Dart&logoColor=white"/>
-
+<p>
+    <img alt="Windows" src="https://img.shields.io/badge/-Flutter-blue?style=for-the-badge&logo=Flutter&logoColor=white"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Dart-0175C2?style=for-the-badge&logo=Dart&logoColor=white"/>
+</p>
 
 ### Banco de dados
 
 <!-- data base -->
-<img alt="MySql" src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/-Postgresql-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=272b33"/>
+<p>
+    <img alt="MySql" src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Postgresql-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=272b33"/>
+</p>
 
 ### Ferramentas
 <!-- tools -->
-
-<img alt="Windows" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=fff"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/-Bitbucket-0052CC?style=for-the-badge&logo=Bitbucket&logoColor=fff"/>
-
-<img alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
-
-<img alt="Apache%20Tomcat" src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=for-the-badge&logo=Apache%20Tomcat&logoColor=black"/>
-
-
-<img alt="UBUNTU" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
-
-
-<img alt="Windows" src="https://img.shields.io/badge/-jira%20software-0052CC?style=for-the-badge&logo=jira-software&logoColor=fff"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/-Neovim-57A143?style=for-the-badge&logo=Neovim&logoColor=fff"/>
-
-<img alt="Windows" src="https://img.shields.io/badge/-Heroku-430098?style=for-the-badge&logo=Heroku&logoColor=fff"/>
-
-
 <p>
+    <img alt="Windows" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=fff"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Bitbucket-0052CC?style=for-the-badge&logo=Bitbucket&logoColor=fff"/>
+    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+    <img alt="Apache%20Tomcat" src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=for-the-badge&logo=Apache%20Tomcat&logoColor=black"/>
+    <img alt="UBUNTU" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+    <img alt="Windows" src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-jira%20software-0052CC?style=for-the-badge&logo=jira-software&logoColor=fff"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Neovim-57A143?style=for-the-badge&logo=Neovim&logoColor=fff"/>
+    <img alt="Windows" src="https://img.shields.io/badge/-Heroku-430098?style=for-the-badge&logo=Heroku&logoColor=fff"/>
+</p>
 <hr>
 
 ## Habilidades Detalhadas
