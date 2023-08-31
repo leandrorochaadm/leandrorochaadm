@@ -37,8 +37,9 @@ Utilizando as melhores práticas como código limpo (clean code), arquitetura li
 Inglês intermediário: Capaz de compreender expressões cotidianas, leitura e escrita de emails e programar códigos em Inglês.
 
 # Contatos
-https://www.linkedin.com/in/leandrorochaadm
-(11) 95030-5882
-leandrorochaadm@gmail.com
+* https://www.linkedin.com/in/leandrorochaadm
+* (11) 95030-5882 (WhatsApp)
+* leandrorochaadm@gmail.com
+
 
 
