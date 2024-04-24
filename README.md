@@ -1,14 +1,14 @@
 # Leandro Rocha! :man_technologist:
 
 ## Programador Flutter
-Sou um profissional com quase 5 anos de experiência com Flutter. Desenvolvendo aplicativos com paixão por escrever códigos com qualidade, boa manutenção e testáveis.
+Sou um profissional com 5 anos de experiência com Flutter. Desenvolvendo aplicativos com paixão por escrever códigos com qualidade, boa manutenção e testáveis.
 
 Todos com interfaces elaboradas e com design, utilizando técnicas UI/UX, para ter uma melhor experiência e desempenho.
 
 Utilizando as melhores práticas como código limpo (clean code), arquitetura limpa (clean architecture), desenvolvimento ágil e TDD (Test-driven development) com testes de unidade e testes de widgets.
 
 # Habilidades
-* Domínio com o Framework **Flutter** a quase **5 anos**;
+* Domínio com o Framework **Flutter** a **5 anos**;
 * Conhecimento nas bibliotecas para gerenciamento de estado: **BLoC/Cubit, MobX, ValueNotifier, Provider e Rivepod**;
 * Conhecimento na biblioteca de Injeção de Dependência – **Get It**; 
 * Conhecimento sólido do ecossistema Flutter, incluindo design system, gerenciamento de estado;
@@ -38,7 +38,7 @@ Inglês intermediário: Capaz de compreender expressões cotidianas, leitura e e
 
 # Contatos
 * https://www.linkedin.com/in/leandrorochaadm
-* (11) 95030-5882 (WhatsApp)
+* (11) 99711-8447 (WhatsApp)
 * leandrorochaadm@gmail.com
 
 
