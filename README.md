@@ -1,45 +1,15 @@
 # Leandro Rocha! :man_technologist:
 
 ## Programador Flutter
-Sou um profissional com 5 anos de experiência com Flutter. Desenvolvendo aplicativos com paixão por escrever códigos com qualidade, boa manutenção e testáveis.
 
-Todos com interfaces elaboradas e com design, utilizando técnicas UI/UX, para ter uma melhor experiência e desempenho.
+Tenho 6 anos de experiência com Flutter. Desenvolvendo aplicativos com qualidade, boa performance e alta cobertura de testes unitários,  o que me permitiu entregar produtos robustos e eficientes. E publicação do app nas lojas Google e Apple.
 
-Utilizando as melhores práticas como código limpo (clean code), arquitetura limpa (clean architecture), desenvolvimento ágil e TDD (Test-driven development) com testes de unidade e testes de widgets.
+Meu domínio do desenvolvimento ágil e do desenvolvimento orientado por testes (TDD) tem sido essencial para garantir a alta cobertura de testes unitários e de widgets, assegurando que as aplicações que desenvolvo sejam não apenas funcionais, mas também confiáveis e fáceis de manter.
+## Habilidades
 
-# Habilidades
-* Domínio com o Framework **Flutter** a **5 anos**;
-* Conhecimento nas bibliotecas para gerenciamento de estado: **BLoC/Cubit, MobX, ValueNotifier, Provider e Rivepod**;
-* Conhecimento na biblioteca de Injeção de Dependência – **Get It**; 
-* Conhecimento sólido do ecossistema Flutter, incluindo design system, gerenciamento de estado;
-* Familiaridade com arquiteturas de aplicativos, como MVC, MVVM, MVP ou **Clean Architecture** e conceitos de **SOLID**;
-* Conhecimento em Padrões de projeto (**Microfrontend e design pattern**);
-* Conhecimento em Banco Dados – **HIVE e SQLite**;
-* Vivência com Code Review, segurança e qualidade de software;
-* Vivência com integração de **APIs RESTful**, consumo de serviços web e Microsserviços;
-* Conhecimento em **Firebase** e Analytics;
-* Conhecimento em **Git** e Git flow;
-* Vivência em **testes unitários, testes de widgets** em aplicativos Flutter;
-* Conhecimento em **publicação de APP** em lojas (**IOS e Android**);
-* Conhecimento em POO (orientação a objetos);
-* Vivência com metodologias ágeis: **Scrum** e/ou Kanban, Git flow.
-* Conhecimento em queries e scripts com o padrão ANSI SQL
-* Conhecimento em banco de dados **MySQL e Postgres**;
-* Conhecimento em ferramentas de processo, principalmente fluxograma;
-* Conhecimento em Modelagem UML e/ou Análise Estruturada;
-* Conhecimento em **Golang**;
-* Conhecimento em HTML 5;
-* Conhecimento em JavaScript (**VueJS**);
-* Conhecimento em CSS/SASS;
-* Conhecimento em **Java** JEE (**Spring Boot** e Hibernate);
-
-# Idioma
-Inglês intermediário: Capaz de compreender expressões cotidianas, leitura e escrita de emails e programar códigos em Inglês.
+Flutter ( BLoC | Cubit | MobX | ValueNotifier | Provider | Riverpod | Get It | Mocktail ) Firebase analytics | i18n | Git | GitFlow | SOLID | TDD ( testes unitários | testes de widget ) | arquitetura ( Clean Architecture | MVC | MVVM | MVP) | Microfrontend | Microapp | publicação do app na lojas Google e Apple | API REST | gRPC | Golang | JavaScript (VueJS) | Java JEE (Spring Boot e Hibernate) | NoSQL | MySQL | PostgreSQL |  Inglês intermediário | Figma | Adobe XD | Scrum | Kanban | Linux | MacOS
 
 # Contatos
 * https://www.linkedin.com/in/leandrorochaadm
-* (11) 99711-8447 (WhatsApp)
+* [(11) 99711-8447 (WhatsApp)](https://wa.me/5511997118447)
 * leandrorochaadm@gmail.com
-
-
-
