@@ -17,7 +17,7 @@ Flutter ( BLoC | Cubit | MobX | ChangeNotifier | Provider | Riverpod | Get It | 
 
 > Descrição da Empresa: A Softo é uma renomada empresa de tecnologia operando globalmente, com sedes no Brasil e nos EUA, e uma clientela que inclui grandes organizações como a Organização Mundial de Saúde (OMS), a Fundação Getúlio Vargas (FGV) e a Stone.
 
-> Projeto FA app: Como parte da equipe de desenvolvimento, contribui ativamente para conectar e informar médicos, cientistas e famílias ao redor do mundo na luta contra a Ataxia de Friedreich, uma doença neurodegenerativa grave. Meu foco está em otimizar a interface do usuário para garantir uma experiência fluida e acessível em vários idiomas. Veja o link.
+> Projeto FA app: Como parte da equipe de desenvolvimento, contribui ativamente para conectar e informar médicos, cientistas e famílias ao redor do mundo na luta contra a Ataxia de Friedreich, uma doença neurodegenerativa grave. Meu foco está em otimizar a interface do usuário para garantir uma experiência fluida e acessível em vários idiomas. [Veja o site](https://www.thefaapp.org)
 
 > Responsabilidades Técnicas: O app é desenvolvido 100% com Flutter, sou responsável pela refatoração visual do aplicativo, melhorando a usabilidade e estética do app. Desenvolvo com testes unitários e de widgets, com integração com Firebase Analytics, Firestore Database e RabbitMQ, além de gerenciar a internalização de idiomas (i18n), visualização de artigos e notícias, e facilitar o compartilhamento de informações entre os usuários por meio do chat e para não usuários através de redes sociais.
 
@@ -27,7 +27,7 @@ Flutter ( BLoC | Cubit | MobX | ChangeNotifier | Provider | Riverpod | Get It | 
  
 > Descrição da Empresa: Atuei em um projeto chave para a Claro Pay, e ela é uma fintech que faz parte do grupo Claro, focado em oferecer uma ampla gama de serviços financeiros digitais.
 
-> Projeto seguros e assistências técnicas: Responsável pela elaboração e desenvolvimento do módulo de seguros e assistências técnicas, incluindo funcionalidades para contratação, comparação de produtos, gestão de contratos ativos (cancelamento e alteração) e suporte ao cliente. Veja o link.
+> Projeto seguros e assistências técnicas: Responsável pela elaboração e desenvolvimento do módulo de seguros e assistências técnicas, incluindo funcionalidades para contratação, comparação de produtos, gestão de contratos ativos (cancelamento e alteração) e suporte ao cliente.  [Veja o site](https://claropay.com.br/) ou [veja o app](https://www.claropay.com.br/baixar-o-app-claro-pay/)
 
 > Responsabilidades Técnicas: Empreguei práticas avançadas de desenvolvimento em Flutter, seguindo padrões de código limpo e arquitetura limpa, e dividindo o projeto em microapps para melhor gestão. Utilizei TDD com testes de unidade e testes de widgets para garantir a robustez do código e integrei funcionalidades com Firebase e APIs REST, culminando na publicação nas lojas da Google e Apple.
 
@@ -35,7 +35,8 @@ Flutter ( BLoC | Cubit | MobX | ChangeNotifier | Provider | Riverpod | Get It | 
 
 ● EULABS (Dezembro/2020 até Março/2022)
  
-> Projeto e-commerce de vendas de passagens: Contribui no desenvolvimento do e-commerce de venda de passagens, otimizando a gestão de vendas e atendimento ao cliente. Veja o link.
+> Projeto e-commerce de vendas de passagens: Contribui no desenvolvimento do e-commerce de venda de passagens, otimizando a gestão de vendas e atendimento ao cliente. [Veja o site](https://www.eucatur.com.br/)
+
 > Responsabilidades Técnicas: Atuei nas tecnologias de frontend e backend, utilizando JavaScript (VueJS) e Golang. Fui parte integral da equipe que fez a transição de uma arquitetura monolítica para uma arquitetura baseada em microsserviços usando gRPC e Docker, com banco de dados em MySQL.
 
 ## Contatos
