@@ -1,0 +1,79 @@
+{
+  // ---------------------------------------------------------------
+  // LaTeX Workshop — este projeto NÃO usa latexmk.
+  // A instalação local é TeX Live 2026basic (BasicTeX), que não inclui
+  // o latexmk. A receita padrão da extensão falharia com
+  // "Does the executable exist?".
+  //
+  // O documento usa fontspec + fonte Inter carregada do sistema, então
+  // exige xelatex (ou lualatex) — pdflatex não consegue usar fontes
+  // OpenType do sistema.
+  //
+  // Receita: xelatex 2x + move-pdf.
+  //   - 1ª passada gera .aux/.out, 2ª estabiliza os bookmarks do PDF
+  //     (hyperref pede rerun na 1ª).
+  //   - move-pdf traz o PDF e o .synctex.gz de volta para a raiz; os
+  //     auxiliares (.aux .log .out .xdv) ficam em build/.
+  //     Necessário porque o xelatex do TeX Live não tem -aux-directory
+  //     (opção exclusiva do MiKTeX) — ele escreve tudo em um só lugar.
+  //
+  // outDir aponta para a raiz (%DIR%) porque é onde a extensão procura
+  // o PDF para o preview e o SyncTeX. O -output-directory do xelatex
+  // aponta para build/ independentemente disso.
+  // ---------------------------------------------------------------
+
+  "latex-workshop.latex.outDir": "%DIR%",
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex",
+      // Caminho absoluto: o symlink /Library/TeX/texbin é o padrão do
+      // MacTeX e não depende do PATH herdado. Se o VSCode for aberto
+      // pelo Finder/Dock (e não pelo terminal), o PATH não traz texbin
+      // e um "xelatex" simples não seria encontrado.
+      "command": "/Library/TeX/texbin/xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-output-directory=%DIR%/build",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "move-pdf",
+      "command": "/bin/sh",
+      "args": [
+        "-c",
+        "mkdir -p '%DIR%/build' && mv -f '%DIR%/build/%DOCFILE%.pdf' '%DIR%/%DOCFILE%.pdf' && mv -f '%DIR%/build/%DOCFILE%.synctex.gz' '%DIR%/%DOCFILE%.synctex.gz'"
+      ],
+      "env": {}
+    }
+  ],
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "xelatex ×2 → raiz",
+      "tools": ["xelatex", "xelatex", "move-pdf"]
+    }
+  ],
+
+  "latex-workshop.latex.recipe.default": "first",
+
+  // Não recompilar a cada save — o build é rápido, mas o currículo é
+  // editado em rajadas. Troque para "onSave" se preferir automático.
+  "latex-workshop.latex.autoBuild.run": "never",
+
+  // O "Clean" da extensão limpa relativo ao outDir (a raiz). Como os
+  // auxiliares vivem em build/, os globs apontam para lá.
+  "latex-workshop.latex.clean.fileTypes": [
+    "build/*.aux",
+    "build/*.fls",
+    "build/*.log",
+    "build/*.out",
+    "build/*.toc",
+    "build/*.xdv",
+    "*.synctex.gz"
+  ]
+}

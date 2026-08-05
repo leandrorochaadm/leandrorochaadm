@@ -1,0 +1,14 @@
+# Arquivos intermediários do LaTeX
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+
+# Saída de compilação
+build/
+
+# macOS
+.DS_Store

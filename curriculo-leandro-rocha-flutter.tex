@@ -1,0 +1,254 @@
+% ---------------------------------------------------------------
+% Currículo — Leandro Rocha de Brito | Desenvolvedor Mobile Flutter
+% Compilar com: xelatex curriculo-leandro-rocha-flutter.tex
+% ---------------------------------------------------------------
+% Decisões ATS-safe (NÃO alterar sem revalidar a extração de texto):
+%   - Coluna única, sem tabelas de layout, sem ícones
+%   - Contato no corpo do documento, nunca em header/footer
+%   - Ligatures=NoCommon evita que "fi"/"fl" quebrem a extração
+%   - RawFeature={-calt;-case} desliga as alternativas contextuais da
+%     Inter, que trocam "(", ")" e "-" por glifos sem mapeamento
+%     ToUnicode — sem isso, parênteses e hífens somem na extração
+%   - Hifenização desligada para não partir palavras-chave
+% ---------------------------------------------------------------
+% Decisões de legibilidade:
+%   - Texto NÃO justificado (ragged right): justificar sem hifenização
+%     produz espaçamento irregular e "rios" brancos entre palavras
+%   - Corpo 9pt (classe extarticle), entrelinha 1.12, respiro entre blocos
+%   - Uma única cor de destaque (petróleo) para criar hierarquia
+% ---------------------------------------------------------------
+\documentclass[9pt,a4paper]{extarticle}
+
+\usepackage{fontspec}
+\usepackage[margin=1.35cm,top=1.2cm,bottom=1.1cm]{geometry}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+% Metadados do PDF: nomeiam a aba do leitor e preenchem os campos que
+% alguns ATS leem antes mesmo de extrair o texto. pdflang ajuda leitores
+% de tela a escolher a pronúncia correta.
+\hypersetup{
+  pdftitle={Leandro Rocha de Brito — Desenvolvedor Mobile Flutter},
+  pdfauthor={Leandro Rocha de Brito},
+  pdfsubject={Currículo — Desenvolvedor Mobile Flutter},
+  pdfkeywords={Flutter, Dart, Mobile, Clean Architecture, Riverpod, BLoC, Testes, TDD, Firebase, Supabase},
+  pdflang={pt-BR}
+}
+\usepackage{parskip}
+
+% --- Paleta -----------------------------------------------------
+% Todos os tons derivam de #120A8F (H=244°) variando apenas saturação
+% e luminosidade. Entre parênteses, a luminância Rec.709 convertida em
+% % de cinza — é o que uma impressora monocromática enxerga.
+% Nenhum tom passa de 36%: acima disso o toner P&B apaga o traço.
+\definecolor{ink}{HTML}{181820}      % texto principal        (10% cinza)
+\definecolor{accent}{HTML}{120A8F}   % nome, seções, empresas ( 8% cinza)
+\definecolor{rule}{HTML}{0000CD}     % filetes e marcadores   ( 6% cinza)
+\definecolor{muted}{HTML}{000080}    % rótulos e metadados    ( 4% cinza)
+
+% --- Fontes -----------------------------------------------------
+\setmainfont{Inter}[
+  Path           = /Users/leandrorocha/Library/Fonts/,
+  UprightFont    = Inter-Regular.ttf,
+  ItalicFont     = Inter-Italic.ttf,
+  BoldFont       = Inter-SemiBold.ttf,
+  BoldItalicFont = Inter-BoldItalic.ttf,
+  Ligatures      = {NoCommon,NoContextual},
+  RawFeature     = {-calt;-case},
+]
+\newfontfamily\interbold{Inter}[
+  Path        = /Users/leandrorocha/Library/Fonts/,
+  UprightFont = Inter-Bold.ttf,
+  Ligatures   = {NoCommon,NoContextual},
+  RawFeature  = {-calt;-case},
+]
+% Kerning desligado (-kern). Usar em trechos curtos cujo par de glifos
+% recebe kern forte da Inter ("PJ", "7."): o xdvipdfmx grava esse ajuste
+% como deslocamento no operador TJ e o extrator de texto do ATS o lê como
+% espaço, produzindo "P J" e "17 .6K". Sem kern, a extração sai limpa.
+\newfontfamily\nokern{Inter}[
+  Path        = /Users/leandrorocha/Library/Fonts/,
+  UprightFont = Inter-Regular.ttf,
+  Ligatures   = {NoCommon,NoContextual},
+  RawFeature  = {-calt;-case;-kern},
+]
+% Títulos de seção: bold com espacejamento entre letras.
+\newfontfamily\secfont{Inter}[
+  Path        = /Users/leandrorocha/Library/Fonts/,
+  UprightFont = Inter-Bold.ttf,
+  LetterSpace = 8.0,
+  Ligatures   = {NoCommon,NoContextual},
+  RawFeature  = {-calt;-case},
+]
+
+\color{ink}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.42em}
+\linespread{1.12}
+\pagestyle{empty}
+\raggedright   % não justificar — ver nota de legibilidade acima
+
+% Hifenização desligada: palavras partidas quebram o match de keyword.
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+% --- Comandos ---------------------------------------------------
+% Seção: caixa alta espaçada, cor de destaque, filete abaixo.
+\newcommand{\sect}[1]{%
+  \vspace{0.85em}%
+  {\secfont\fontsize{9.5}{11}\selectfont\color{accent}\MakeUppercase{#1}}\par
+  \vspace{0.30em}%
+  {\color{rule}\hrule height 1.1pt}%
+  \vspace{0.75em}%
+}
+
+% Experiência: empresa — cargo | vínculo | url ......... período
+% A URL fica na MESMA linha do cabeçalho, aproveitando o espaço vazio antes
+% da data: impresso o link clicável se perde, mas uma linha própria por
+% experiência custaria uma página inteira. Corpo menor por hierarquia — é
+% metadado de verificação, não conteúdo.
+\newcommand{\job}[5]{%
+  \vspace{0.75em}%
+  {\interbold\fontsize{11}{13}\selectfont\color{accent}#1}%
+  \hspace{0.35em}{\interbold\fontsize{10.5}{13}\selectfont — #2}%
+  \hspace{0.35em}{\color{muted}\fontsize{9}{12}\selectfont | \mbox{#3}}%
+  \hspace{0.45em}{\color{rule}\fontsize{7.8}{11}\selectfont #5}%
+  \hfill{\color{muted}\fontsize{9}{12}\selectfont #4}\par
+  \vspace{0.30em}%
+}
+
+% Rótulo de campo repetitivo (Descrição da Empresa, Projeto...) → discreto
+\newcommand{\fld}[1]{{\color{muted}\textbf{#1}}}
+% Rótulo dentro de um bullet (informativo) → cor do texto
+\newcommand{\lbl}[1]{\textbf{#1}}
+
+% Lista compacta com o ambiente `list` nativo (evita depender de enumitem).
+\newenvironment{tight}{%
+  \begin{list}{\textcolor{rule}{\rule[0.18em]{0.32em}{0.32em}}}{%
+    \setlength{\leftmargin}{1.15em}%
+    \setlength{\labelwidth}{0.60em}%
+    \setlength{\labelsep}{0.55em}%
+    \setlength{\topsep}{0.30em}%
+    \setlength{\itemsep}{0.32em}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\partopsep}{0pt}%
+    \setlength{\rightmargin}{0pt}%
+  }%
+}{\end{list}}
+
+\begin{document}
+
+% =================== CABEÇALHO ===================
+{\interbold\fontsize{21}{24}\selectfont\color{accent} LEANDRO ROCHA DE BRITO}\par
+\vspace{0.20em}
+{\fontsize{12}{15}\selectfont\color{ink} Desenvolvedor Mobile Flutter Sênior}\par
+\vspace{0.60em}
+{\fontsize{9.3}{13}\selectfont\color{muted}
+\href{https://www.linkedin.com/in/leandrorochaadm}{https://linkedin.com/in/leandrorochaadm} \quad
+\href{https://github.com/leandrorochaadm}{https://github.com/leandrorochaadm} \quad
+\href{http://wa.me/5511997118447}{(11) 99711-8447}\par
+\vspace{0.15em}
+\href{mailto:leandrorochaadm@gmail.com}{leandrorochaadm@gmail.com} \quad
+100\% remoto \quad {\color{accent}\textbf{Disponibilidade imediata}}\par
+}
+\vspace{0.55em}
+{\color{rule}\hrule height 1.1pt}
+
+% =================== APRESENTAÇÃO ===================
+\sect{Apresentação}
+
+Desenvolvedor com \textbf{6 anos} de experiência em desenvolvimento de software, sendo \textbf{mais de 4 anos dedicados a Flutter,} construindo aplicativos mobile para e-commerce, saúde e fintech, incluindo projetos para a \textbf{Claro}. Trabalho com \textbf{Clean Architecture} com \textbf{testes unitários, smoke test e e2e}, com apps publicados na \textbf{Google Play} e na \textbf{App Store}. Atuo em \textbf{decisões arquiteturais} e na \textbf{definição dos padrões de qualidade e testes} adotados pelo time.
+
+% =================== HABILIDADES ===================
+\sect{Habilidades}
+
+\begin{tight}
+  \item \lbl{Flutter e Dart:} \textbf{BLoC} | \textbf{Riverpod} | Provider | Get It | Dio | DartZ | Hive | Flutter Secure Storage | fl\_chart | Google Maps | Flutter Web (PWA) | Design System próprio | Freezed | GoRouter | build\_runner
+  \item \lbl{Plataformas e recursos nativos:} \textbf{Android} | \textbf{iOS} | \textbf{Biometria facial (FaceTec, ML Kit)} | geração e \textbf{assinatura digital de PDF}
+  \item \lbl{Arquitetura:} \textbf{Clean Architecture} | MVVM | MVC | \textbf{Monorepo (Dart Workspace)} | microapps | MultiRepo | modelagem multi-tenant
+  \item \lbl{Qualidade e observabilidade:} \textbf{Testes unitários e de widget (Mocktail)} | \textbf{TDD} | cobertura acima de 85\% | \textbf{Datadog} | \textbf{Firebase Crashlytics} | Microsoft Clarity | \textbf{CI/CD (GitHub Actions)} | code review
+  \item \lbl{Firebase:} Analytics | Firestore | Storage | Remote Config | Cloud Messaging (FCM)
+  \item \lbl{Backend e dados:} API REST | \textbf{Supabase / PostgreSQL} (Row Level Security, migrations versionadas) | SQLite | MySQL | Cloudflare Workers
+  \item \lbl{Distribuição e localização:} publicação e manutenção de apps na \textbf{Google Play} e \textbf{App Store} | push notifications (FCM e OneSignal) | Internacionalização (i18n) e localização (l10n)
+  \item \lbl{Outras:} \textbf{Git} | GitHub | GitLab | \textbf{Scrum} | Kanban | Jira | Figma | Linux | macOS
+\end{tight}
+
+% =================== EXPERIÊNCIAS ===================
+\sect{Experiências}
+
+\job{\href{https://clyvo.global/}{Clyvo}}{Desenvolvedor Flutter}{{\nokern PJ}}{Outubro/2025 até Julho/2026}{\href{https://clyvo.global/}{https://clyvo.global}}
+
+
+\fld{Descrição da Empresa:} Healthtech brasileira de telemedicina, com plataforma que conecta médicos e pacientes em consultas online, prontuário eletrônico, prescrição e assinatura digital de documentos médicos.
+
+\fld{Projeto:} Aplicativo de telemedicina onde o paciente busca o médico por especialidade, agenda a consulta e é atendido por videochamada, recebendo a receita assinada digitalmente ao fim do atendimento. Conta ainda com sala de espera virtual, chat entre médico e paciente, prontuário, prescrição, assinatura digital de documentos, assistente de IA por voz, cadastro com biometria facial e notificações push.
+
+\fld{Responsabilidades Técnicas:}
+\begin{tight}
+  \item \lbl{Qualidade e testes:} entrei em um projeto \textbf{sem nenhum teste automatizado} e fui responsável por \textbf{definir a estratégia e os padrões de teste adotados pelo time,} levando a base a mais de \textbf{6.800 testes} unitários e de widget em Mocktail e \textbf{85\% de cobertura} do código; \textbf{introduzi a prática de code review} no time mobile, atuando como revisor.
+  \item \lbl{Arquitetura:} \textbf{conduzi a migração de multirepo para monorepo} em Dart Workspace, estruturando os \textbf{31 módulos de negócio} com Clean Architecture e Riverpod, com design system e SDK de chat próprios.
+  \item \lbl{Teleconsulta em tempo real:} manutenção e evolução do módulo de videochamada em LiveKit/WebRTC, com tela de chamada nativa (CallKit no iOS e IncomingCall no Android).
+  \item \lbl{Onboarding e documentos:} validação por \textbf{biometria facial} (FaceTec e ML Kit) e assinatura digital com geração de PDF.
+  \item \lbl{Integrações e infraestrutura mobile:} consumo de APIs REST com Dio, persistência com Hive e Secure Storage, observabilidade com \textbf{Datadog}.
+\end{tight}
+
+\job{\href{https://www.monetizze.com.br/}{Monetizze}}{Desenvolvedor Flutter}{{\nokern PJ}}{Janeiro/2025 até Setembro/2025}{\href{https://www.monetizze.com.br/}{https://monetizze.com.br}}
+
+\fld{Descrição da Empresa:} Plataforma impulsionadora de vendas online. Suporte a produtores e afiliados na comercialização de produtos digitais e físicos com ferramentas de gestão em tempo real.
+
+\fld{Projeto:} Aplicativo mobile para afiliados e produtores digitais, oferecendo gestão completa de vendas, comissões e saques, além de relatórios detalhados, métricas de desempenho e notificações em tempo real. \textbf{1M+ downloads} · {\nokern 17.6K} avaliações · nota 4,8/5 na Google Play.
+
+\fld{Responsabilidades Técnicas:} Desenvolvimento mobile em Flutter aplicando Clean Architecture e padrão BLoC; consumo de APIs REST; integração com Firebase (Crashlytics, Analytics, Remote Config); persistência com SQLite e Secure Storage; autenticação biométrica; push notifications via OneSignal e FCM; internacionalização; gráficos interativos; testes unitários automatizados e participação em code reviews.
+
+\job{\href{https://sof.to/}{SOFTO}}{Desenvolvedor Flutter}{{\nokern PJ}}{Outubro/2023 até Novembro/2024}{\href{https://sof.to/}{https://sof.to} · \href{https://www.thefaapp.org}{https://thefaapp.org}}
+
+\fld{Descrição da Empresa:} Empresa de tecnologia com sedes no Brasil e nos EUA, atendendo clientes como OMS, FGV e Stone.
+
+\fld{Projeto \href{https://www.thefaapp.org}{FA app}:} Aplicativo global que conecta médicos, cientistas e famílias na luta contra a Ataxia de Friedreich, doença neurodegenerativa rara. \textbf{10K+ downloads} · nota 4,6/5 (Android) e 5,0/5 (iOS).
+
+\fld{Responsabilidades Técnicas:} Atuei na refatoração visual e evolução do app 100\% Flutter, melhorando usabilidade e acessibilidade. Desenvolvi com testes unitários e de widget, integração com Firebase Analytics e Firestore, gestão de internacionalização (i18n), leitura de artigos e notícias, e compartilhamento de conteúdo via chat interno e redes sociais.
+
+\job{\href{https://amaris.com/}{Amaris Consulting}}{Desenvolvedor Flutter}{{\nokern PJ}}{Abril/2022 até Agosto/2023}{\href{https://amaris.com/}{https://amaris.com} · \href{https://claropay.com.br/}{https://claropay.com.br}}
+
+
+\fld{Descrição da Empresa:} Atuei em um projeto chave para a \href{https://claropay.com.br/}{Claro Pay}, fintech do grupo Claro focada em serviços financeiros digitais.
+
+\fld{Projeto seguros e assistências técnicas:} Responsável pelo desenvolvimento end-to-end do módulo de seguros e assistências técnicas, com funcionalidades de contratação, comparação de produtos, gestão de contratos ativos (cancelamento e alteração) e suporte ao cliente. \textbf{1M+ downloads} · 58.7K avaliações na Google Play.
+
+\fld{Responsabilidades Técnicas:} Apliquei Clean Architecture e boas práticas de código limpo, desenvolvendo o módulo dentro da arquitetura de microapps adotada no projeto. Utilizei TDD com testes unitários e de widget para garantir robustez, integração com Firebase e APIs REST.
+
+% =================== PROJETOS PESSOAIS ===================
+\sect{Projetos Pessoais e Voluntariado}
+
+\job{\href{http://lions-pontos.tektonsoftwares.workers.dev}{Lions Pontos}}{Lions Club de Ji-Paraná Centro}{Voluntário}{Julho/2026 até o momento}{}
+
+\fld{Projeto:} Plataforma multi-clube que apura em tempo real o prêmio de associado mais atuante de clubes de serviço, substituindo a apuração manual em atas de papel por um ranking público e auditável. Lançamento de presença pelo celular, extrato individual por associado, tabela de pontos configurável por clube e exportação do ano leonístico. Em piloto no Lions Clube de Ji-Paraná/RO.
+
+\fld{Demo:} \href{http://lions-pontos.tektonsoftwares.workers.dev/demo}{https://lions-pontos.tektonsoftwares.workers.dev/demo}\\
+\fld{Código:} \href{http://github.com/leandrorochaadm/lions-club-points}{https://github.com/leandrorochaadm/lions-club-points}
+
+\fld{Responsabilidades Técnicas:} \textbf{Único responsável por todas as decisões técnicas do produto — do modelo de dados ao deploy.}
+\begin{tight}
+  \item \lbl{Frontend:} concepção e desenvolvimento end-to-end em \textbf{Flutter Web} (PWA instalável) com Clean Architecture e Riverpod.
+  \item \lbl{Backend e dados:} \textbf{Supabase/Postgres} com modelagem \textbf{multi-tenant} e isolamento entre clubes garantido por \textbf{Row Level Security no banco} (não na aplicação); \textbf{19 migrations} versionadas.
+  \item \lbl{Qualidade:} \textbf{968 testes} automatizados com \textbf{91,7\% de cobertura}, com \textbf{CI no GitHub Actions barrando merge} abaixo de 80\%.
+  \item \lbl{Infraestrutura:} deploy em \textbf{Cloudflare Workers}.
+\end{tight}
+
+% =================== FORMAÇÃO ===================
+\sect{Formação Acadêmica}
+
+{\interbold\fontsize{10.5}{13}\selectfont\color{accent} MBA em Inteligência Artificial e Big Data}\hspace{0.35em}{\interbold\fontsize{10.5}{13}\selectfont — \href{https://mba.iabigdata.icmc.usp.br/}{ICMC/USP}}\par
+{\color{muted}\fontsize{8.6}{11}\selectfont Julho/2025 até Outubro/2026, em andamento \quad \href{https://mba.iabigdata.icmc.usp.br/}{https://mba.iabigdata.icmc.usp.br}}\par
+\vspace{0.20em}
+Programa de 400h com Python, Machine Learning, Deep Learning, NLP, Engenharia de Dados em Cloud e Governança de Dados, incluindo projeto aplicado com orientação individual.
+
+\vspace{0.60em}
+{\interbold\fontsize{10.5}{13}\selectfont\color{accent} Análise e Desenvolvimento de Sistemas}\hspace{0.35em}{\interbold\fontsize{10.5}{13}\selectfont — IFRO} {\color{muted}\fontsize{9}{12}\selectfont (Instituto Federal de Rondônia)}\par
+{\color{muted}\fontsize{8.6}{11}\selectfont Fevereiro/2020 até Novembro/2022}\par
+
+\sect{Idiomas}
+
+\textbf{Português} — nativo \quad · \quad \textbf{Inglês técnico} — leitura fluente de documentação, código e especificações
+
+\end{document}
