@@ -10,5 +10,8 @@
 # Saída de compilação
 build/
 
+# Arquivos de trabalho temporários
+temp/
+
 # macOS
 .DS_Store

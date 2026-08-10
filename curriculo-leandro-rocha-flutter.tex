@@ -31,7 +31,7 @@
   pdftitle={Leandro Rocha de Brito — Desenvolvedor Mobile Flutter},
   pdfauthor={Leandro Rocha de Brito},
   pdfsubject={Currículo — Desenvolvedor Mobile Flutter},
-  pdfkeywords={Flutter, Dart, Mobile, Clean Architecture, Riverpod, BLoC, Testes, TDD, Firebase, Supabase},
+  pdfkeywords={Flutter, Dart, Mobile, Clean Architecture, Riverpod, BLoC, ValueNotifier, ChangeNotifier, MVVM, Monorepo, Microapps, Testes, TDD, Firebase, Supabase},
   pdflang={pt-BR}
 }
 \usepackage{parskip}
@@ -149,7 +149,7 @@
 \href{http://wa.me/5511997118447}{(11) 99711-8447}\par
 \vspace{0.15em}
 \href{mailto:leandrorochaadm@gmail.com}{leandrorochaadm@gmail.com} \quad
-100\% remoto \quad {\color{accent}\textbf{Disponibilidade imediata}}\par
+100\% remoto\par
 }
 \vspace{0.55em}
 {\color{rule}\hrule height 1.1pt}
@@ -157,20 +157,21 @@
 % =================== APRESENTAÇÃO ===================
 \sect{Apresentação}
 
-Desenvolvedor com \textbf{6 anos} de experiência em desenvolvimento de software, sendo \textbf{mais de 4 anos dedicados a Flutter,} construindo aplicativos mobile para e-commerce, saúde e fintech, incluindo projetos para a \textbf{Claro}. Trabalho com \textbf{Clean Architecture} com \textbf{testes unitários, smoke test e e2e}, com apps publicados na \textbf{Google Play} e na \textbf{App Store}. Atuo em \textbf{decisões arquiteturais} e na \textbf{definição dos padrões de qualidade e testes} adotados pelo time.
+Desenvolvedor mobile com \textbf{mais de 4 anos dedicados a Flutter,} construindo aplicativos mobile para e-commerce, saúde e fintech, incluindo projetos para a \textbf{Claro}. Trabalho com \textbf{Clean Architecture} e \textbf{testes unitários, de widget e de integração}, com apps publicados na \textbf{Google Play} e na \textbf{App Store}. Atuo em \textbf{decisões arquiteturais} e na \textbf{definição dos padrões de qualidade e testes} adotados pelo time.
 
 % =================== HABILIDADES ===================
 \sect{Habilidades}
 
 \begin{tight}
-  \item \lbl{Flutter e Dart:} \textbf{BLoC} | \textbf{Riverpod} | Provider | Get It | Dio | DartZ | Hive | Flutter Secure Storage | fl\_chart | Google Maps | Flutter Web (PWA) | Design System próprio | Freezed | GoRouter | build\_runner
-  \item \lbl{Plataformas e recursos nativos:} \textbf{Android} | \textbf{iOS} | \textbf{Biometria facial (FaceTec, ML Kit)} | geração e \textbf{assinatura digital de PDF}
-  \item \lbl{Arquitetura:} \textbf{Clean Architecture} | MVVM | MVC | \textbf{Monorepo (Dart Workspace)} | microapps | MultiRepo | modelagem multi-tenant
-  \item \lbl{Qualidade e observabilidade:} \textbf{Testes unitários e de widget (Mocktail)} | \textbf{TDD} | cobertura acima de 85\% | \textbf{Datadog} | \textbf{Firebase Crashlytics} | Microsoft Clarity | \textbf{CI/CD (GitHub Actions)} | code review
+  \item \lbl{Flutter e Dart:} \textbf{BLoC} | \textbf{Riverpod} | \textbf{ValueNotifier} | \textbf{ChangeNotifier} | Provider | Get It | Dio | DartZ | Hive | Flutter Secure Storage | fl\_chart | Google Maps | Flutter Web (PWA) | Design System próprio | Freezed | GoRouter | build\_runner
+  \item \lbl{Plataformas e recursos nativos:} \textbf{Android} | \textbf{iOS} | \textbf{Biometria facial (FaceTec, ML Kit)} | \textbf{integração de SDKs e plugins nativos} (Kotlin/Swift)
+  \item \lbl{Arquitetura:} \textbf{Clean Architecture} | MVVM | MVC | \textbf{tratamento de erro tipado (Either/Result + Failure)} | \textbf{Monorepo (Dart Workspace)} | \textbf{modularização em packages} | microapps | MultiRepo | modelagem multi-tenant
+  \item \lbl{IA no desenvolvimento:} uso de \textbf{IA como apoio ao desenvolvimento} com \textbf{regras de projeto versionadas} para garantir aderência ao padrão do time, e \textbf{validação técnica em code review}
+  \item \lbl{Qualidade e observabilidade:} \textbf{Testes unitários e de widget (Mocktail)} | \textbf{TDD} | \textbf{Datadog} | \textbf{Firebase Crashlytics} | Microsoft Clarity | \textbf{CI/CD (GitHub Actions, Codemagic)} | \textbf{Git Flow} e \textbf{trunk-based} | code review
   \item \lbl{Firebase:} Analytics | Firestore | Storage | Remote Config | Cloud Messaging (FCM)
   \item \lbl{Backend e dados:} API REST | \textbf{Supabase / PostgreSQL} (Row Level Security, migrations versionadas) | SQLite | MySQL | Cloudflare Workers
   \item \lbl{Distribuição e localização:} publicação e manutenção de apps na \textbf{Google Play} e \textbf{App Store} | push notifications (FCM e OneSignal) | Internacionalização (i18n) e localização (l10n)
-  \item \lbl{Outras:} \textbf{Git} | GitHub | GitLab | \textbf{Scrum} | Kanban | Jira | Figma | Linux | macOS
+  \item \lbl{Outras:} \textbf{Git} | GitHub | GitLab | \textbf{Scrum} | Kanban | Jira | Figma | Linux | macOS | VueJS | Astro | Golang
 \end{tight}
 
 % =================== EXPERIÊNCIAS ===================
@@ -179,43 +180,43 @@ Desenvolvedor com \textbf{6 anos} de experiência em desenvolvimento de software
 \job{\href{https://clyvo.global/}{Clyvo}}{Desenvolvedor Flutter}{{\nokern PJ}}{Outubro/2025 até Julho/2026}{\href{https://clyvo.global/}{https://clyvo.global}}
 
 
-\fld{Descrição da Empresa:} Healthtech brasileira de telemedicina, com plataforma que conecta médicos e pacientes em consultas online, prontuário eletrônico, prescrição e assinatura digital de documentos médicos.
+\fld{Descrição da Empresa:} Healthtech brasileira de telemedicina, que conecta médicos e pacientes em consultas online.
 
-\fld{Projeto:} Aplicativo de telemedicina onde o paciente busca o médico por especialidade, agenda a consulta e é atendido por videochamada, recebendo a receita assinada digitalmente ao fim do atendimento. Conta ainda com sala de espera virtual, chat entre médico e paciente, prontuário, prescrição, assinatura digital de documentos, assistente de IA por voz, cadastro com biometria facial e notificações push.
+\fld{Projeto:} Aplicativo de telemedicina onde o paciente busca o médico por especialidade, agenda a consulta e é atendido por videochamada, recebendo a receita assinada digitalmente ao fim do atendimento. Conta ainda com sala de espera virtual, chat entre médico e paciente, prontuário, prescrição, assistente de IA por voz, cadastro com biometria facial e notificações push.
 
 \fld{Responsabilidades Técnicas:}
 \begin{tight}
-  \item \lbl{Qualidade e testes:} entrei em um projeto \textbf{sem nenhum teste automatizado} e fui responsável por \textbf{definir a estratégia e os padrões de teste adotados pelo time,} levando a base a mais de \textbf{6.800 testes} unitários e de widget em Mocktail e \textbf{85\% de cobertura} do código; \textbf{introduzi a prática de code review} no time mobile, atuando como revisor.
-  \item \lbl{Arquitetura:} \textbf{conduzi a migração de multirepo para monorepo} em Dart Workspace, estruturando os \textbf{31 módulos de negócio} com Clean Architecture e Riverpod, com design system e SDK de chat próprios.
+  \item \lbl{Qualidade e testes:} estruturei \textbf{do zero} a estratégia e os padrões de teste adotados pelo time, levando a base a mais de \textbf{6.800 testes} unitários e de widget em Mocktail e \textbf{85\% de cobertura} do código; \textbf{introduzi a prática de code review} no time mobile, atuando como revisor. \textbf{POC de testes E2E com Patrol} e comparativo com Appium para o QA.
+  \item \lbl{Arquitetura:} \textbf{conduzi a migração de multirepo para monorepo} em Dart Workspace, estruturando os \textbf{31 módulos de negócio} com Clean Architecture. Gerência de estado com \textbf{Riverpod} no app e \textbf{BLoC} no SDK de chat com IA. \textbf{Design system e SDK de chat isolados em packages próprios,} compartilhados entre os apps do monorepo.
   \item \lbl{Teleconsulta em tempo real:} manutenção e evolução do módulo de videochamada em LiveKit/WebRTC, com tela de chamada nativa (CallKit no iOS e IncomingCall no Android).
-  \item \lbl{Onboarding e documentos:} validação por \textbf{biometria facial} (FaceTec e ML Kit) e assinatura digital com geração de PDF.
+  \item \lbl{Onboarding e documentos:} \textbf{integração da biometria facial} (FaceTec e ML Kit) no fluxo de cadastro, com tratamento de falha e cancelamento de captura; tratamento de erro e reautenticação no fluxo de \textbf{assinatura digital}.
   \item \lbl{Integrações e infraestrutura mobile:} consumo de APIs REST com Dio, persistência com Hive e Secure Storage, observabilidade com \textbf{Datadog}.
 \end{tight}
 
 \job{\href{https://www.monetizze.com.br/}{Monetizze}}{Desenvolvedor Flutter}{{\nokern PJ}}{Janeiro/2025 até Setembro/2025}{\href{https://www.monetizze.com.br/}{https://monetizze.com.br}}
 
-\fld{Descrição da Empresa:} Plataforma impulsionadora de vendas online. Suporte a produtores e afiliados na comercialização de produtos digitais e físicos com ferramentas de gestão em tempo real.
+\fld{Descrição da Empresa:} Plataforma de vendas online para produtores e afiliados de produtos digitais e físicos.
 
-\fld{Projeto:} Aplicativo mobile para afiliados e produtores digitais, oferecendo gestão completa de vendas, comissões e saques, além de relatórios detalhados, métricas de desempenho e notificações em tempo real. \textbf{1M+ downloads} · {\nokern 17.6K} avaliações · nota 4,8/5 na Google Play.
+\fld{Projeto:} Aplicativo mobile para afiliados e produtores digitais, com gestão de vendas, comissões e saques, relatórios, métricas de desempenho e notificações em tempo real. \textbf{1M+ downloads} · nota 4,8/5 na Google Play.
 
-\fld{Responsabilidades Técnicas:} Desenvolvimento mobile em Flutter aplicando Clean Architecture e padrão BLoC; consumo de APIs REST; integração com Firebase (Crashlytics, Analytics, Remote Config); persistência com SQLite e Secure Storage; autenticação biométrica; push notifications via OneSignal e FCM; internacionalização; gráficos interativos; testes unitários automatizados e participação em code reviews.
+\fld{Responsabilidades Técnicas:} Desenvolvimento em Flutter com \textbf{Clean Architecture e BLoC}; APIs REST; Firebase (Crashlytics, Analytics, Remote Config); SQLite e Secure Storage; autenticação biométrica; push via OneSignal e FCM; i18n; gráficos interativos; testes unitários e code review. Build e publicação em \textbf{Codemagic} com GitLab.
 
 \job{\href{https://sof.to/}{SOFTO}}{Desenvolvedor Flutter}{{\nokern PJ}}{Outubro/2023 até Novembro/2024}{\href{https://sof.to/}{https://sof.to} · \href{https://www.thefaapp.org}{https://thefaapp.org}}
 
 \fld{Descrição da Empresa:} Empresa de tecnologia com sedes no Brasil e nos EUA, atendendo clientes como OMS, FGV e Stone.
 
-\fld{Projeto \href{https://www.thefaapp.org}{FA app}:} Aplicativo global que conecta médicos, cientistas e famílias na luta contra a Ataxia de Friedreich, doença neurodegenerativa rara. \textbf{10K+ downloads} · nota 4,6/5 (Android) e 5,0/5 (iOS).
+\fld{Projeto \href{https://www.thefaapp.org}{FA app}:} Aplicativo global que conecta médicos, cientistas e famílias na luta contra a Ataxia de Friedreich, doença neurodegenerativa rara. \textbf{10K+ downloads} · nota 4,6/5.
 
-\fld{Responsabilidades Técnicas:} Atuei na refatoração visual e evolução do app 100\% Flutter, melhorando usabilidade e acessibilidade. Desenvolvi com testes unitários e de widget, integração com Firebase Analytics e Firestore, gestão de internacionalização (i18n), leitura de artigos e notícias, e compartilhamento de conteúdo via chat interno e redes sociais.
+\fld{Responsabilidades Técnicas:} Refatoração visual e evolução do app 100\% Flutter, com \textbf{MVVM e gerência de estado em ChangeNotifier}, melhorando usabilidade e acessibilidade. Testes unitários e de widget, Firebase Analytics e Firestore, internacionalização (i18n), leitura de artigos e notícias e compartilhamento via chat interno e redes sociais.
 
 \job{\href{https://amaris.com/}{Amaris Consulting}}{Desenvolvedor Flutter}{{\nokern PJ}}{Abril/2022 até Agosto/2023}{\href{https://amaris.com/}{https://amaris.com} · \href{https://claropay.com.br/}{https://claropay.com.br}}
 
 
 \fld{Descrição da Empresa:} Atuei em um projeto chave para a \href{https://claropay.com.br/}{Claro Pay}, fintech do grupo Claro focada em serviços financeiros digitais.
 
-\fld{Projeto seguros e assistências técnicas:} Responsável pelo desenvolvimento end-to-end do módulo de seguros e assistências técnicas, com funcionalidades de contratação, comparação de produtos, gestão de contratos ativos (cancelamento e alteração) e suporte ao cliente. \textbf{1M+ downloads} · 58.7K avaliações na Google Play.
+\fld{Projeto seguros e assistências técnicas:} Responsável pelo desenvolvimento end-to-end do módulo de seguros e assistências técnicas, com funcionalidades de contratação, comparação de produtos, gestão de contratos ativos (cancelamento e alteração) e suporte ao cliente. \textbf{1M+ downloads} na Google Play.
 
-\fld{Responsabilidades Técnicas:} Apliquei Clean Architecture e boas práticas de código limpo, desenvolvendo o módulo dentro da arquitetura de microapps adotada no projeto. Utilizei TDD com testes unitários e de widget para garantir robustez, integração com Firebase e APIs REST.
+\fld{Responsabilidades Técnicas:} Apliquei Clean Architecture e boas práticas de código limpo, desenvolvendo o módulo dentro da \textbf{arquitetura de microapps} adotada no projeto, com \textbf{monorepo e módulos isolados em packages} e gerência de estado em \textbf{ValueNotifier.} Utilizei TDD com testes unitários e de widget para garantir robustez, integração com Firebase e APIs REST.
 
 % =================== PROJETOS PESSOAIS ===================
 \sect{Projetos Pessoais e Voluntariado}
@@ -231,7 +232,7 @@ Desenvolvedor com \textbf{6 anos} de experiência em desenvolvimento de software
 \begin{tight}
   \item \lbl{Frontend:} concepção e desenvolvimento end-to-end em \textbf{Flutter Web} (PWA instalável) com Clean Architecture e Riverpod.
   \item \lbl{Backend e dados:} \textbf{Supabase/Postgres} com modelagem \textbf{multi-tenant} e isolamento entre clubes garantido por \textbf{Row Level Security no banco} (não na aplicação); \textbf{19 migrations} versionadas.
-  \item \lbl{Qualidade:} \textbf{968 testes} automatizados com \textbf{91,7\% de cobertura}, com \textbf{CI no GitHub Actions barrando merge} abaixo de 80\%.
+  \item \lbl{Qualidade:} \textbf{968 testes} automatizados com mais de \textbf{90\% de cobertura}, com \textbf{CI no GitHub Actions barrando merge} abaixo de 80\%.
   \item \lbl{Infraestrutura:} deploy em \textbf{Cloudflare Workers}.
 \end{tight}
 
@@ -241,7 +242,7 @@ Desenvolvedor com \textbf{6 anos} de experiência em desenvolvimento de software
 {\interbold\fontsize{10.5}{13}\selectfont\color{accent} MBA em Inteligência Artificial e Big Data}\hspace{0.35em}{\interbold\fontsize{10.5}{13}\selectfont — \href{https://mba.iabigdata.icmc.usp.br/}{ICMC/USP}}\par
 {\color{muted}\fontsize{8.6}{11}\selectfont Julho/2025 até Outubro/2026, em andamento \quad \href{https://mba.iabigdata.icmc.usp.br/}{https://mba.iabigdata.icmc.usp.br}}\par
 \vspace{0.20em}
-Programa de 400h com Python, Machine Learning, Deep Learning, NLP, Engenharia de Dados em Cloud e Governança de Dados, incluindo projeto aplicado com orientação individual.
+Programa de 400h em machine learning, NLP e engenharia de dados em cloud, com projeto aplicado.
 
 \vspace{0.60em}
 {\interbold\fontsize{10.5}{13}\selectfont\color{accent} Análise e Desenvolvimento de Sistemas}\hspace{0.35em}{\interbold\fontsize{10.5}{13}\selectfont — IFRO} {\color{muted}\fontsize{9}{12}\selectfont (Instituto Federal de Rondônia)}\par
