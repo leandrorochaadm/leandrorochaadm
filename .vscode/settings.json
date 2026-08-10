@@ -12,14 +12,24 @@
   // Receita: xelatex 2x + move-pdf.
   //   - 1ª passada gera .aux/.out, 2ª estabiliza os bookmarks do PDF
   //     (hyperref pede rerun na 1ª).
-  //   - move-pdf traz o PDF e o .synctex.gz de volta para a raiz; os
-  //     auxiliares (.aux .log .out .xdv) ficam em build/.
-  //     Necessário porque o xelatex do TeX Live não tem -aux-directory
-  //     (opção exclusiva do MiKTeX) — ele escreve tudo em um só lugar.
+  //   - move-pdf traz APENAS o PDF de volta para a raiz. Todo o resto
+  //     (.aux .log .out .xdv) fica em build/, de modo que a raiz do
+  //     repositório contenha só o .tex (fonte) e o .pdf (entregável).
+  //     O move é necessário porque o xelatex do TeX Live não tem
+  //     -aux-directory (opção exclusiva do MiKTeX) — ele escreve tudo
+  //     em um só lugar.
+  //
+  // SyncTeX está DESLIGADO de propósito (sem -synctex=1). O .synctex.gz
+  // só funciona se ficar ao lado do PDF, e mantê-lo na raiz contraria a
+  // regra de "só .tex e .pdf fora do build/". Como este é um documento
+  // curto de 2 páginas, editado direto no .tex, o clique-para-navegar
+  // entre PDF e fonte não compensa o arquivo extra. Para reativar:
+  // acrescente "-synctex=1" aos args e volte a mover o .synctex.gz
+  // para a raiz no move-pdf.
   //
   // outDir aponta para a raiz (%DIR%) porque é onde a extensão procura
-  // o PDF para o preview e o SyncTeX. O -output-directory do xelatex
-  // aponta para build/ independentemente disso.
+  // o PDF para o preview. O -output-directory do xelatex aponta para
+  // build/ independentemente disso.
   // ---------------------------------------------------------------
 
   "latex-workshop.latex.outDir": "%DIR%",
@@ -33,7 +43,6 @@
       // e um "xelatex" simples não seria encontrado.
       "command": "/Library/TeX/texbin/xelatex",
       "args": [
-        "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
         "-output-directory=%DIR%/build",
@@ -46,7 +55,7 @@
       "command": "/bin/sh",
       "args": [
         "-c",
-        "mkdir -p '%DIR%/build' && mv -f '%DIR%/build/%DOCFILE%.pdf' '%DIR%/%DOCFILE%.pdf' && mv -f '%DIR%/build/%DOCFILE%.synctex.gz' '%DIR%/%DOCFILE%.synctex.gz'"
+        "mkdir -p '%DIR%/build' && mv -f '%DIR%/build/%DOCFILE%.pdf' '%DIR%/%DOCFILE%.pdf'"
       ],
       "env": {}
     }
@@ -73,7 +82,6 @@
     "build/*.log",
     "build/*.out",
     "build/*.toc",
-    "build/*.xdv",
-    "*.synctex.gz"
+    "build/*.xdv"
   ]
 }
