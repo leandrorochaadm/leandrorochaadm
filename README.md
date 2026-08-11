@@ -29,7 +29,7 @@ Desenvolvedor com **6 anos** de experiência em desenvolvimento de software, sen
 ## Habilidades
 
 - **Flutter e Dart:** **BLoC** | **Riverpod** | **ValueNotifier** | **ChangeNotifier** | Provider | Get It | Dio | DartZ | Hive | Flutter Secure Storage | fl_chart | Google Maps | Flutter Web (PWA) | Design System próprio | Freezed | GoRouter | build_runner
-- **Recursos nativos:** **integração de SDKs e plugins nativos** (Kotlin/Swift) em apps Flutter para **Android** e **iOS** | **Biometria facial e OCR de documentos (FaceTec)** | **LiveKit/WebRTC** | CallKit e IncomingCall
+- **Recursos nativos:** **integração de SDKs e plugins nativos** escritos em Kotlin/Swift em apps Flutter para **Android** e **iOS** | **Biometria facial e OCR de documentos (FaceTec)** | **LiveKit/WebRTC** | CallKit e IncomingCall
 - **Arquitetura:** **Clean Architecture** | MVVM | MVC | **Monorepo (Dart Workspace)** | **modularização em packages** | microapps | MultiRepo | modelagem multi-tenant
 - **IA no desenvolvimento:** **Claude Code** como apoio ao desenvolvimento, com **regras de projeto versionadas** para manter a aderência ao padrão do time e **validação em code review**
 - **Qualidade e observabilidade:** **Testes unitários e de widget (Mocktail)** | **TDD** | **monitoramento e investigação de incidentes em produção** (**Datadog**, **Firebase Crashlytics**, Microsoft Clarity) | **CI/CD (GitHub Actions, Codemagic)** | **Git Flow** e **trunk-based** | code review
@@ -55,7 +55,7 @@ Desenvolvedor com **6 anos** de experiência em desenvolvimento de software, sen
 - **Qualidade e testes:** entrei em um projeto **sem nenhum teste automatizado** e **defini a estratégia e os padrões de teste adotados pelo time**, levando a base a **alta cobertura de testes automatizados** (unitários e de widget em Mocktail). **Bugs e regressões pararam de voltar**, o time **reduziu retrabalho** e passou a **subir versão com segurança**, o que deu à empresa confiança para **demonstrar o produto a clientes**. **Introduzi a prática de code review** no time mobile, atuando como revisor. Monitorei o app **em produção** com **Datadog** e Crashlytics, investigando incidentes reportados. **POC de testes E2E com Patrol** e comparativo com Appium para o QA.
 - **Arquitetura:** **conduzi a migração de multirepo para monorepo** em Dart Workspace, estruturando os **31 módulos de negócio** com Clean Architecture: o que antes exigia publicar vários repositórios passou a **sair em um PR** e acabaram as **quebras por descompasso de versão**. **Riverpod** no app e **BLoC** no SDK de chat com IA; **design system e SDK isolados em packages** compartilhados entre os apps.
 - **Teleconsulta em tempo real:** manutenção e evolução do módulo de videochamada em LiveKit/WebRTC, com tela de chamada nativa (CallKit no iOS e IncomingCall no Android).
-- **Onboarding e documentos:** **integração da biometria facial e do OCR de documentos** (FaceTec) no cadastro do médico, com tratamento de falha e cancelamento de captura; tratamento de erro e reautenticação no fluxo de **assinatura digital**.
+- **Onboarding e documentos:** **integração da biometria facial e do OCR de documentos** (FaceTec, SDK nativo em Kotlin/Swift) no cadastro do médico, com tratamento de falha e cancelamento de captura; tratamento de erro e reautenticação no fluxo de **assinatura digital**.
 - **Integrações e infraestrutura mobile:** consumo de APIs REST com Dio, persistência com Hive e Secure Storage, observabilidade com **Datadog**.
 
 ---
