@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 1. **O PDF tem no máximo 2 páginas.** Não é preferência, é requisito. Nenhuma edição do `.tex` está concluída antes de o log confirmar `(2 pages)`. Se a mudança estourar para 3, **corte algo** (ver Orçamento de espaço) — nunca entregue 3 páginas nem reduza fonte/margem para disfarçar.
 2. **O PDF é recompilado a cada alteração do `.tex`.** Ele é entregável versionado; o git não sabe que deriva da fonte. Já aconteceu de um PDF defasado distribuir um claim que havia sido suavizado.
-3. **O `.tex` é a fonte da verdade.** Onde `.tex` e `README.md` discordarem sobre um **fato** (empresa, cargo, período, métrica, claim técnico), o `.tex` está certo e o README é que se corrige — nunca o contrário. Se o `.tex` estiver factualmente errado, o conserto é editar o `.tex` **primeiro** e propagar para o README depois, nessa ordem. Isso não apaga a divergência legítima de **profundidade**: o README continua podendo detalhar o que o `.tex` cortou por espaço.
+3. **O `.tex` é a fonte da verdade, e o `README.md` é espelho total dele.** O README não tem conteúdo próprio: não carrega seção, experiência, bullet, número ou frase que não exista no `.tex`, e não omite nada que exista nele. Divergência de qualquer natureza (fato **ou** profundidade) é defeito, não escolha editorial. **A única diferença de conteúdo permitida é o bloco de contato do cabeçalho do README** (transcrito em "O que é este repositório"), que acrescenta `Aberto a propostas` e o link de download do PDF. Fora dele, nada — nem uma linha, nem um número, nem uma seção. (A marcação, claro, difere por obrigação do formato: o README é Markdown/HTML onde o `.tex` é macro LaTeX.)
 4. **Nada que ultrapasse o teto de claims** (camada 1 em Regras de conteúdo) **entra sem que o conflito seja apontado ao Leandro primeiro**, com o limite nomeado e a alternativa defensável na mesa. A decisão final é dele; o que não pode acontecer é ele descobrir na entrevista.
 
 ## O que é este repositório
@@ -18,15 +18,29 @@ Não é um projeto de software: é o **currículo do Leandro Rocha de Brito** (D
 | `curriculo-leandro-rocha-flutter.tex` | PDF de candidatura, otimizado para ATS | recrutador / robô de triagem |
 | `README.md` | perfil do GitHub | quem chega pelo link do GitHub |
 
-**Eles divergem de propósito, e a divergência é bidirecional.** O `.tex` tem orçamento rígido de 2 páginas; o README não tem limite, mas também não foi atualizado em todas as revisões. Divergências conhecidas hoje:
+**Os dois carregam o mesmo conteúdo** (regra inviolável nº 3): mesmas seções, na mesma ordem, com os mesmos blocos, bullets, números e redação; o que varia entre os dois é só o meio de leitura. O orçamento de 2 páginas manda nos dois — o que é cortado do `.tex` por espaço sai também do README, porque o recrutador cruza PDF, README e LinkedIn, e qualquer coisa que não bate vira pergunta na entrevista.
 
-- **Só no README:** experiência da EULABS, contagem de avaliações da Play Store (17.6K, 58.7K), nota do iOS, ementa detalhada do MBA, o bullet `Integrações e infraestrutura mobile` da Clyvo e a separação de `Teleconsulta` e `Onboarding` em dois bullets (o `.tex` funde por espaço), `hipóteses diagnósticas` e o documento de `alta` no projeto da Clyvo, `GitHub Actions` nomeado no Lions Pontos.
-- **Só no `.tex`:** nada nas Habilidades — a lista foi sincronizada em Agosto/2026 e as duas devem permanecer idênticas.
-- **As Apresentações são textos distintos, não versões do mesmo.** A do README abre com `6 anos de experiência em desenvolvimento de software`, que não existe no `.tex`. Não presuma que estão sincronizadas: leia as duas antes de editar qualquer uma.
+**A exceção da regra 3, literal.** Este é o bloco de contato do cabeçalho do `README.md`, e é o único trecho do arquivo que não precisa existir no `.tex`. O `Aberto a propostas` e o botão de download do PDF vivem aqui e em nenhum outro lugar:
 
-Ao alterar um **fato** (empresa, período, métrica, claim), atualize os dois — sempre no sentido `.tex` → `README.md` (regra inviolável nº 3). Ao alterar **profundidade** (cortar por espaço, detalhar), só o arquivo em questão.
+```html
+<sub>
+  <a href="https://www.linkedin.com/in/leandrorochaadm">linkedin.com/in/leandrorochaadm</a> &nbsp;·&nbsp;
+  <a href="https://github.com/leandrorochaadm">github.com/leandrorochaadm</a> &nbsp;·&nbsp;
+  <a href="https://wa.me/5511997118447">(11) 99711-8447</a>
+  <br>
+  <a href="mailto:leandrorochaadm@gmail.com">leandrorochaadm@gmail.com</a> &nbsp;·&nbsp;
+  100% remoto &nbsp;·&nbsp;
+  <b>Aberto a propostas</b>
+  <br><br>
+  <a href="curriculo-leandro-rocha-flutter.pdf"><b>📄 Baixar currículo em PDF</b></a>
+</sub>
+```
 
-Divergência de fato entre os dois arquivos é **defeito, não escolha editorial**: recrutador cruza PDF, README e LinkedIn, e um período que não bate vira pergunta na entrevista. Ao encontrar uma, não escolha sozinho qual versão vale — o `.tex` é a referência, mas se o conflito sugerir que o próprio `.tex` está errado (ex.: dois empregos com datas que não encaixam), pergunte ao Leandro antes de propagar.
+Os contatos em si (LinkedIn, GitHub, telefone, e-mail, `100% remoto`) estão nos dois arquivos e seguem a regra normal: mudou num, muda no outro.
+
+**O README está defasado hoje.** Não confie em nenhuma lista de pendências: as divergências se apuram na hora, pela conferência do passo 6 do fluxo, e se resolvem sempre em favor do `.tex`.
+
+Se uma divergência sugerir que o próprio `.tex` está errado (ex.: dois empregos com datas que não encaixam), pergunte ao Leandro antes de propagar. O mesmo vale quando espelhar significa **apagar do README uma experiência real** que não coube nas 2 páginas: a decisão é dele, e o caminho, se ele quiser mantê-la, é ela entrar no `.tex` primeiro e descer de lá.
 
 `temp/` é área de trabalho ignorada pelo git (respostas de entrevista, requisitos de vagas, gaps/roadmap). Serve de contexto, não é entregável — e é o lugar de qualquer lista volátil (backlog de ajustes, blocos a revisar), que não deve entrar neste arquivo.
 
@@ -35,11 +49,12 @@ Divergência de fato entre os dois arquivos é **defeito, não escolha editorial
 Ao mudar conteúdo do currículo:
 
 1. **Cheque o teto antes de escrever.** Leia a camada 1 (Fato) e confirme que o projeto em questão sustenta o que será afirmado.
-2. **Edite o `.tex`.** Aplique as camadas 2 e 3 na redação.
+2. **Edite o `.tex` primeiro, sempre.** Ele é a fonte da verdade: nenhuma mudança de conteúdo nasce no README. Aplique as camadas 2 e 3 na redação. Se o que motivou a tarefa foi um erro factual no `.tex`, é ali que se conserta, e só depois se espelha.
 3. **Recompile** (duas passadas) e confirme `(2 pages)` no log. Estourou? Volte ao Orçamento de espaço.
 4. **Extraia o texto do PDF** e confira a integridade da extração ATS.
-5. **É fato? Atualize o `README.md` também.** É só profundidade? Fica no arquivo editado.
-6. **Não commite sem pedir.** Deixe as mudanças no working tree e relate o que mudou.
+5. **Espelhe no `README.md`, sempre.** Qualquer mudança de conteúdo — fato, redação, corte por espaço, reordenação de bullet — vai para o README na mesma tarefa, com a mesma redação.
+6. **Confira a paridade contra o texto extraído no passo 4,** seção a seção, na ordem em que aparecem no `.tex`: Apresentação, Habilidades, cada bloco de experiência, cada projeto pessoal, Formação e Idiomas. A tarefa não está concluída com os dois fora de paridade, e a olho a conferência falha — foi assim que as divergências atuais se acumularam.
+7. **Não commite sem pedir.** Deixe as mudanças no working tree e relate o que mudou.
 
 ## Build do PDF
 
@@ -89,6 +104,8 @@ Acréscimo de ~3 linhas já estoura para 3 páginas. Quando algo novo precisa en
 3. **Bullet que é só lista de tecnologia sem efeito** — o `Integrações e infraestrutura mobile` da Clyvo saiu assim; as tecnologias já estavam em Habilidades.
 4. **Descrições de empresa** — podem encolher para meia linha; o recrutador conhece Claro e Monetizze.
 5. **URLs de empresa no `\job`** — são metadado de verificação, não conteúdo.
+
+Todo corte feito aqui é replicado no `README.md` (regra inviolável nº 3): o `.tex` encolhe e o README encolhe junto.
 
 Fundir dois bullets economiza mais que encurtar duas frases: o ambiente `tight` cobra `itemsep` e recuo **por item**, não por linha de texto.
 
