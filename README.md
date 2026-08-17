@@ -22,7 +22,7 @@
 
 ## Apresentação
 
-Desenvolvedor mobile com **mais de 4 anos dedicados a Flutter**, construindo aplicativos para e-commerce, saúde e fintech, incluindo projetos para a **Claro**, publicados na **Google Play** e na **App Store**. No último projeto entrei numa base **sem nenhum teste automatizado** e defini a estratégia de testes do time: **bugs e regressões caíram** e o time passou a **subir versão com segurança**. Trabalho com **Clean Architecture** e **defino padrões de arquitetura e qualidade**.
+Desenvolvedor com 6 anos de experiência e com **mais de 4 anos dedicados a Flutter**, construindo aplicativos para e-commerce, saúde e fintech, incluindo projetos para a **Claro**, publicados na **Google Play** e na **App Store**. No último projeto entrei numa base **sem nenhum teste automatizado** e defini a estratégia de testes do time: **bugs e regressões caíram** e o time passou a **subir versão com segurança**. Trabalho com **Clean Architecture** e **defino padrões de arquitetura e qualidade**.
 
 ---
 
