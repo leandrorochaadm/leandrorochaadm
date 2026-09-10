@@ -2,7 +2,7 @@
 
 # LEANDRO ROCHA DE BRITO
 
-### Desenvolvedor Mobile Flutter Sênior
+### Desenvolvedor Mobile Flutter
 
 <sub>
   <a href="https://www.linkedin.com/in/leandrorochaadm">linkedin.com/in/leandrorochaadm</a> &nbsp;·&nbsp;
