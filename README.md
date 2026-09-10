@@ -22,7 +22,7 @@
 
 ## Apresentação
 
-Desenvolvedor com 6 anos de experiência, **mais de 4 dedicados a Flutter**, construindo aplicativos para e-commerce, saúde e fintech, incluindo projetos para a **Claro**, com **apps de mais de 1 milhão de downloads**. No último projeto assumi um **MVP sem nenhum teste automatizado** e defini a estratégia de testes do time: o produto **passou do piloto com clientes ao pré-lançamento**. Trabalho com **Clean Architecture**, **conduzi a migração do projeto para monorepo** e **defino os padrões de qualidade adotados pelo time**.
+Desenvolvedor **Flutter** com **mais de 6 anos de experiência**, construindo aplicativos para vendas online, saúde e fintech, incluindo projetos para a **Claro**, com **apps de mais de 1 milhão de downloads**. No último projeto assumi um **MVP sem nenhum teste automatizado** e defini a estratégia de testes do time: o produto **passou do piloto com clientes ao pré-lançamento**. Trabalho com **Clean Architecture**, **conduzi a migração do projeto para monorepo** e **defino os padrões de qualidade adotados pelo time**.
 
 ---
 
@@ -34,9 +34,9 @@ Desenvolvedor com 6 anos de experiência, **mais de 4 dedicados a Flutter**, con
 - **IA no desenvolvimento:** **Claude Code** como apoio ao desenvolvimento, com **regras de projeto versionadas** para manter a aderência ao padrão do time e **validação em code review**
 - **Qualidade e observabilidade:** **Testes unitários e de widget (Mocktail)** | **TDD** | **monitoramento e investigação de incidentes em produção** (**Firebase Crashlytics**, **Sentry**) | **análise de comportamento e produto** (**PostHog**, Microsoft Clarity) | **CI/CD (GitHub Actions, Codemagic)** | **Git Flow** e **trunk-based** | code review
 - **Firebase:** Analytics | Firestore | Storage | Remote Config | Cloud Messaging (FCM)
-- **Backend e dados:** API REST | **Supabase / PostgreSQL** (Row Level Security, migrations versionadas) | SQLite | MySQL | Docker | gRPC | Cloudflare Workers
+- **Backend e dados:** API REST | **Supabase / PostgreSQL** (Row Level Security, migrations versionadas) | SQLite | Cloudflare Workers
 - **Distribuição e localização:** publicação, monitoramento e manutenção de apps **em produção** na **Google Play** e **App Store** | push notifications (FCM e OneSignal) | Internacionalização (i18n) e localização (l10n)
-- **Outras:** **Git** | GitHub | GitLab | **Scrum** | Kanban | squads multifuncionais | Jira | Figma | VueJS | Astro | Golang
+- **Outras:** **Git** | GitHub | GitLab | **Scrum** | Kanban | squads multifuncionais | Jira | Figma | Astro
 
 ---
 
@@ -44,7 +44,7 @@ Desenvolvedor com 6 anos de experiência, **mais de 4 dedicados a Flutter**, con
 
 ### [Clyvo](https://clyvo.global/) — Desenvolvedor Flutter
 
-<sub>PJ &nbsp;·&nbsp; Abril/2026 até Julho/2026 &nbsp;·&nbsp; <a href="https://clyvo.global/">clyvo.global</a></sub>
+<sub>PJ &nbsp;·&nbsp; Outubro/2025 até Agosto/2026 &nbsp;·&nbsp; <a href="https://clyvo.global/">clyvo.global</a></sub>
 
 **Descrição da Empresa:** Startup healthtech brasileira de telemedicina.
 
@@ -60,7 +60,7 @@ Desenvolvedor com 6 anos de experiência, **mais de 4 dedicados a Flutter**, con
 
 ### [Monetizze](https://www.monetizze.com.br/) — Desenvolvedor Flutter
 
-<sub>PJ &nbsp;·&nbsp; Janeiro/2025 até Março/2026 &nbsp;·&nbsp; <a href="https://www.monetizze.com.br/">monetizze.com.br</a></sub>
+<sub>PJ &nbsp;·&nbsp; Novembro/2023 até Setembro/2025 &nbsp;·&nbsp; <a href="https://www.monetizze.com.br/">monetizze.com.br</a></sub>
 
 **Descrição da Empresa:** Plataforma de vendas online para produtores e afiliados de produtos digitais e físicos.
 
@@ -72,7 +72,7 @@ Desenvolvedor com 6 anos de experiência, **mais de 4 dedicados a Flutter**, con
 
 ### [SOFTO](https://sof.to/) — Desenvolvedor Flutter
 
-<sub>PJ &nbsp;·&nbsp; Outubro/2023 até Novembro/2024 &nbsp;·&nbsp; <a href="https://sof.to/">sof.to</a> · <a href="https://www.thefaapp.org">thefaapp.org</a></sub>
+<sub>PJ &nbsp;·&nbsp; Janeiro/2022 até Outubro/2023 &nbsp;·&nbsp; <a href="https://sof.to/">sof.to</a> · <a href="https://www.thefaapp.org">thefaapp.org</a></sub>
 
 **Descrição da Empresa:** Empresa de tecnologia com sedes no Brasil e nos EUA, com clientes como OMS, FGV e Stone.
 
@@ -84,7 +84,7 @@ Desenvolvedor com 6 anos de experiência, **mais de 4 dedicados a Flutter**, con
 
 ### [Amaris Consulting](https://amaris.com/) — Desenvolvedor Flutter
 
-<sub>PJ &nbsp;·&nbsp; Abril/2022 até Agosto/2023 &nbsp;·&nbsp; <a href="https://amaris.com/">amaris.com</a> · <a href="https://claropay.com.br/">claropay.com.br</a></sub>
+<sub>PJ &nbsp;·&nbsp; Junho/2020 até Dezembro/2021 &nbsp;·&nbsp; <a href="https://amaris.com/">amaris.com</a> · <a href="https://claropay.com.br/">claropay.com.br</a></sub>
 
 **Descrição da Empresa:** Projeto para a [Claro Pay](https://claropay.com.br/), fintech do grupo Claro focada em serviços financeiros digitais.
 
@@ -94,18 +94,6 @@ Desenvolvedor com 6 anos de experiência, **mais de 4 dedicados a Flutter**, con
 
 - **Arquitetura:** implementei o módulo dentro da **arquitetura de microapps** do projeto, com **monorepo e módulos isolados em packages**, Clean Architecture, gerência de estado em **ValueNotifier** e integração com Firebase e APIs REST.
 - **Qualidade:** como erro em contratação ou cancelamento de seguro gera prejuízo financeiro e disputa com o cliente, adotei **TDD** desde o início do módulo, com testes unitários e de widget cobrindo esses fluxos.
-
----
-
-### [EULABS](https://eulabs.com.br/) — Desenvolvedor Full Stack
-
-<sub>CLT &nbsp;·&nbsp; Dezembro/2020 até Março/2022 &nbsp;·&nbsp; <a href="https://eulabs.com.br/">eulabs.com.br</a></sub>
-
-**Descrição da Empresa:** Software house que desenvolve produtos digitais sob demanda.
-
-**Projeto e-commerce de passagens:** Loja online de venda de passagens rodoviárias, com gestão de vendas e atendimento ao cliente.
-
-**Responsabilidades Técnicas:** **Mantive e evoluí** o e-commerce nas duas pontas: **VueJS** na loja e **Golang** com **MySQL** nos serviços. Na migração do monolito para **microsserviços**, implementei serviços em **gRPC** e **Docker**, deixando cada um subir sem depender do deploy do sistema inteiro.
 
 ---
 
