@@ -29,11 +29,11 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência**, construindo ap
 ## Habilidades
 
 - **Flutter e Dart:** **BLoC** | **Riverpod** | **ValueNotifier** | **ChangeNotifier** | Provider | Get It | Dio | DartZ | Hive | Flutter Secure Storage | fl_chart | Google Maps | Flutter Web (PWA) | Design System próprio | Freezed | GoRouter | build_runner
-- **Recursos nativos:** **integração de SDKs e plugins nativos** escritos em Kotlin/Swift em apps Flutter para **Android** e **iOS** | **Biometria facial e OCR de documentos (FaceTec)**
-- **Arquitetura:** **Clean Architecture** | MVVM | MVC | **Monorepo (Dart Workspace)** | **modularização em packages** | microapps | MultiRepo | modelagem multi-tenant
+- **Recursos nativos:** **integração de SDKs e plugins nativos** escritos em Kotlin/Swift em apps Flutter para **Android** e **iOS** | **Biometria facial e OCR de documentos (FaceTec)** | **segurança mobile** (armazenamento seguro, autenticação biométrica, reautenticação)
+- **Arquitetura:** **Clean Architecture** | **SOLID** | MVVM | MVC | **Monorepo (Dart Workspace)** | **modularização em packages** | microapps | MultiRepo | modelagem multi-tenant
 - **IA no desenvolvimento:** **Claude Code** como apoio ao desenvolvimento, com **regras de projeto versionadas** para manter a aderência ao padrão do time e **validação em code review**
-- **Qualidade e observabilidade:** **Testes unitários e de widget (Mocktail)** | **TDD** | **monitoramento e investigação de incidentes em produção** (**Firebase Crashlytics**, **Sentry**) | **análise de comportamento e produto** (**PostHog**, Microsoft Clarity) | **CI/CD (GitHub Actions, Codemagic)** | **Git Flow** e **trunk-based** | code review
-- **Firebase:** Analytics | Firestore | Storage | Remote Config | Cloud Messaging (FCM)
+- **Qualidade e observabilidade:** **Testes unitários e de widget (Mocktail)** | **testes de integração** | **TDD** | **monitoramento e investigação de incidentes em produção** (**Firebase Crashlytics**, **Sentry**) | **análise de comportamento e produto** (**PostHog**, Microsoft Clarity) | **CI/CD (GitHub Actions, Codemagic)** | **Git Flow** e **trunk-based** | code review
+- **Firebase:** Authentication | Analytics | Firestore | Storage | Remote Config | Cloud Messaging (FCM)
 - **Backend e dados:** API REST | **Supabase / PostgreSQL** (Row Level Security, migrations versionadas) | SQLite | Cloudflare Workers
 - **Distribuição e localização:** publicação, monitoramento e manutenção de apps **em produção** na **Google Play** e **App Store** | push notifications (FCM e OneSignal) | Internacionalização (i18n) e localização (l10n)
 - **Outras:** **Git** | GitHub | GitLab | **Scrum** | Kanban | squads multifuncionais | Jira | Figma | Astro
@@ -78,7 +78,7 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência**, construindo ap
 
 **Projeto [FA app](https://www.thefaapp.org):** Aplicativo global que conecta médicos, cientistas e famílias na luta contra a Ataxia de Friedreich, doença neurodegenerativa rara, **traduzido para 8 idiomas**. **10K+ downloads** · nota 4,6/5.
 
-**Responsabilidades Técnicas:** **Refatorei a camada visual de 100% das telas** do app, em Flutter com **MVVM e gerência de estado em ChangeNotifier**, melhorando **usabilidade e acessibilidade** e mantendo o layout íntegro nos **8 idiomas**.
+**Responsabilidades Técnicas:** **Refatorei a camada visual de 100% das telas** do app, em Flutter com **MVVM, gerência de estado em ChangeNotifier** e **Firebase Authentication**, melhorando **usabilidade e acessibilidade** e mantendo o layout íntegro nos **8 idiomas**.
 
 ---
 
