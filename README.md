@@ -2,7 +2,7 @@
 
 # LEANDRO ROCHA DE BRITO
 
-### Desenvolvedor Mobile Flutter
+### Desenvolvedor Mobile Flutter Pleno/Sênior
 
 <sub>
   <a href="https://www.linkedin.com/in/leandrorochaadm">linkedin.com/in/leandrorochaadm</a> &nbsp;·&nbsp;
@@ -22,7 +22,7 @@
 
 ## Apresentação
 
-Desenvolvedor **Flutter** com **mais de 6 anos de experiência**, construindo aplicativos para vendas online, saúde e fintech, incluindo projetos para a **Claro**, com **apps de mais de 1 milhão de downloads**. No último projeto assumi um **MVP sem nenhum teste automatizado** e defini a estratégia de testes do time: o produto **passou do piloto com clientes ao pré-lançamento**. Trabalho com **Clean Architecture**, **conduzi a migração do projeto para monorepo** e **defino os padrões de qualidade adotados pelo time**.
+Desenvolvedor **Flutter** com **mais de 6 anos de experiência** em apps Android e iOS para vendas online, saúde e fintech, incluindo projetos para a **Claro** e **apps com mais de 1 milhão de downloads**. No último projeto, assumi um **MVP sem nenhum teste automatizado** e defini a estratégia de testes do time: **bugs e regressões pararam de voltar** e o produto chegou ao piloto com clientes. Conduzi a **migração para monorepo** e introduzi a prática de **code review** no time mobile.
 
 ---
 
@@ -50,10 +50,11 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência**, construindo ap
 
 **Projeto:** Aplicativo de telemedicina usado pelo médico: cadastro do paciente, agendamento e consulta por videochamada, com sala de espera virtual, à qual o paciente entra por link no WhatsApp. Um **assistente de IA por voz ou texto** apoia a anamnese, com o **diagnóstico final sempre do médico**, e o app emite receita, atestado e encaminhamento **assinados digitalmente**.
 
-**Responsabilidades Técnicas:** **O MVP tinha cinco telas, em multirepo, sem nenhum teste automatizado e sem code review.**
+**Responsabilidades Técnicas:** **Assumi o app na fase de MVP**, em multirepo, ainda sem testes automatizados nem code review, e **preparei a base para o produto escalar**.
 
-- **Qualidade e testes:** defini a estratégia e os padrões de teste adotados pelo time, levando a base a **alta cobertura de testes automatizados** (unitários e de widget em Mocktail). **Bugs e regressões pararam de voltar**, o time **reduziu retrabalho** e a empresa ganhou confiança para **levar o produto ao piloto com clientes e ao pré-lançamento**. **Introduzi a prática de code review** no time mobile, atuando como revisor. Investiguei os incidentes reportados durante o piloto. **POC de testes E2E com Patrol** e comparativo com Appium para o QA.
-- **Arquitetura:** **conduzi a migração de multirepo para monorepo** em Dart Workspace, organizando os **31 módulos de negócio** em packages e refatorando as telas existentes para a Clean Architecture do projeto: o que antes exigia publicar vários repositórios passou a **sair em um PR** e acabaram as **quebras por descompasso de versão**. **Riverpod** no app e **BLoC** no SDK do assistente de IA; **design system e SDK isolados em packages** compartilhados entre os apps.
+- **Qualidade e testes:** defini a estratégia e os padrões de teste adotados pelo time, levando a base a **alta cobertura de testes automatizados** (unitários e de widget em Mocktail). **Bugs e regressões pararam de voltar**, o time **reduziu retrabalho** e a empresa ganhou confiança para **levar o produto ao piloto com clientes e ao pré-lançamento**.
+- **Code review e produção:** **introduzi a prática de code review** no time mobile, atuando como revisor, e investiguei os incidentes reportados durante o piloto.
+- **Arquitetura:** **conduzi a migração de multirepo para monorepo** em Dart Workspace e **estruturei o crescimento do app de cinco telas para 31 módulos de negócio** em packages, refatorando as telas existentes para a Clean Architecture do projeto. O que antes exigia publicar vários repositórios passou a **sair em um PR** e acabaram as **quebras por descompasso de versão**. **Riverpod** no app e **BLoC** no SDK do assistente de IA, que **mantive e evoluí**; **design system e SDK isolados em packages** compartilhados entre os apps.
 - **Teleconsulta e onboarding:** **mantive e evoluí** o módulo de videochamada; **integrei a biometria facial e o OCR de documentos** (FaceTec, SDK nativo em Kotlin/Swift) no cadastro do médico, com tratamento de falha e cancelamento de captura; **tratei erro e reautenticação** no fluxo de **assinatura digital**.
 
 ---
@@ -66,7 +67,7 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência**, construindo ap
 
 **Projeto:** Aplicativo mobile para afiliados e produtores digitais, com gestão de vendas, comissões e saques, relatórios, métricas de desempenho e notificações em tempo real. **1M+ downloads** · nota 4,8/5 na Google Play.
 
-**Responsabilidades Técnicas:** **Evoluí** o app em Flutter com **Clean Architecture e BLoC**, integrando APIs REST, Firebase (Crashlytics, Analytics, Remote Config), SQLite e Secure Storage, autenticação biométrica, push via OneSignal e FCM, i18n e gráficos interativos, com testes unitários e code review. Build e publicação em **Codemagic** com GitLab.
+**Responsabilidades Técnicas:** **Evoluí** o app em Flutter com **Clean Architecture e BLoC**. Como o app movimenta comissões e saques, **implementei a autenticação biométrica e o armazenamento seguro** de credenciais, e **reduzi os crashes** investigando as falhas no Crashlytics. Integrei APIs REST, Firebase (Analytics, Remote Config), SQLite, push via OneSignal e FCM, i18n e gráficos interativos, com testes unitários e code review. Build e publicação em **Codemagic** com GitLab.
 
 ---
 
@@ -105,7 +106,7 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência**, construindo ap
 
 **Descrição da Empresa:** Clube de serviço do Lions Clubs International, associação sem fins lucrativos; desenvolvo e opero a plataforma como voluntário, sem remuneração.
 
-**Projeto:** Plataforma multi-clube que apura em tempo real o prêmio de associado mais atuante de clubes de serviço, substituindo a apuração manual em atas de papel por um ranking público e auditável. Lançamento de presença pelo celular, extrato individual por associado, tabela de pontos configurável por clube e exportação do ano leonístico. Em piloto no Lions Clube de Ji-Paraná/RO.
+**Projeto:** Plataforma multi-clube que apura em tempo real o prêmio de associado mais atuante de clubes de serviço, substituindo a apuração manual em atas de papel por um ranking público e auditável. Lançamento de presença pelo celular, extrato individual por associado, tabela de pontos configurável por clube e exportação do ano leonístico. Em piloto no Lions Clube de Ji-Paraná/RO, com expansão prevista para outros clubes.
 
 **Demo:** [https://lions-pontos.tektonsoftwares.workers.dev/demo](https://lions-pontos.tektonsoftwares.workers.dev/demo)<br>
 **Código:** [https://github.com/leandrorochaadm/lions-club-points](https://github.com/leandrorochaadm/lions-club-points)
@@ -114,4 +115,4 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência**, construindo ap
 
 - **Frontend:** concebi e desenvolvi end-to-end em **Flutter Web** (PWA instalável) com Clean Architecture e Riverpod.
 - **Backend e dados:** **Supabase/Postgres** com modelagem **multi-tenant**; como cada clube só pode ver os próprios dados, o isolamento é garantido por **Row Level Security no banco** e não na aplicação. Deploy em **Cloudflare Workers**.
-- **Qualidade e operação:** o ranking define um prêmio e erro de cálculo não é aceitável, então sustento **alta cobertura de testes automatizados** com **CI barrando merge** que a reduza. Como não há QA nem suporte, acompanho erro em produção no **Sentry** e uso real no **PostHog**. Os clubes confiam no ranking o bastante para **abandonar a apuração em papel**.
+- **Qualidade e operação:** o ranking define um prêmio e erro de cálculo não é aceitável, então sustento **alta cobertura de testes automatizados** com **CI barrando merge** que a reduza. Como não há QA nem suporte, acompanho erro em produção no **Sentry** e uso real no **PostHog**. O clube piloto confia no ranking o bastante para **abandonar a apuração em papel**.
