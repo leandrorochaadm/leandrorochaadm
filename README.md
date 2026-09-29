@@ -22,7 +22,7 @@
 
 ## Apresentação
 
-Desenvolvedor **Flutter** com **mais de 6 anos de experiência** em apps Android e iOS para vendas online, saúde e fintech, incluindo projetos para a **Claro** e **apps com mais de 1 milhão de downloads**. No último projeto, assumi um **MVP sem nenhum teste automatizado** e defini a estratégia de testes do time: **bugs e regressões pararam de voltar** e o produto chegou ao piloto com clientes. Conduzi a **migração para monorepo** e introduzi a prática de **code review** no time mobile.
+Desenvolvedor **Flutter** há **mais de 6 anos**, em apps para fintech, vendas digitais e saúde, incluindo **Claro Pay** e **Monetizze**, ambos com **mais de 1 milhão de downloads**. Na Clyvo, assumi um **MVP sem nenhum teste automatizado**: com a estratégia de testes que defini, **bugs e regressões pararam de voltar** e o produto chegou ao **piloto com clientes**. Migrei o app para monorepo e introduzi o code review: **as entregas aceleraram** e o time ganhou **autonomia para seguir os padrões**.
 
 ---
 
@@ -31,11 +31,11 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência** em apps Android
 - **Flutter e Dart:** **BLoC** | **Riverpod** | **ValueNotifier** | **ChangeNotifier** | Provider | Get It | Dio | DartZ | Hive | Flutter Secure Storage | fl_chart | Google Maps | Flutter Web (PWA) | Design System próprio | Freezed | GoRouter | build_runner
 - **Recursos nativos:** **integração de SDKs e plugins nativos** escritos em Kotlin/Swift em apps Flutter para **Android** e **iOS** | **Biometria facial e OCR de documentos (FaceTec)** | **segurança mobile** (armazenamento seguro, autenticação biométrica, reautenticação)
 - **Arquitetura:** **Clean Architecture** | **SOLID** | MVVM | MVC | **Monorepo (Dart Workspace)** | **modularização em packages** | microapps | MultiRepo | modelagem multi-tenant
-- **IA no desenvolvimento:** **Claude Code** como apoio ao desenvolvimento, com **regras de projeto versionadas** para manter a aderência ao padrão do time e **validação em code review**
+- **IA no desenvolvimento:** **Claude Code** com **regras de projeto versionadas** e **validação em code review**
 - **Qualidade e observabilidade:** **Testes unitários e de widget (Mocktail)** | **testes de integração** | **TDD** | **monitoramento e investigação de incidentes em produção** (**Firebase Crashlytics**, **Sentry**) | **análise de comportamento e produto** (**PostHog**, Microsoft Clarity) | **CI/CD (GitHub Actions, Codemagic)** | **Git Flow** e **trunk-based** | code review
 - **Firebase:** Authentication | Analytics | Firestore | Storage | Remote Config | Cloud Messaging (FCM)
 - **Backend e dados:** API REST | **Supabase / PostgreSQL** (Row Level Security, migrations versionadas) | SQLite | Cloudflare Workers
-- **Distribuição e localização:** publicação, monitoramento e manutenção de apps **em produção** na **Google Play** e **App Store** | push notifications (FCM e OneSignal) | Internacionalização (i18n) e localização (l10n)
+- **Distribuição e localização:** publicação, monitoramento e manutenção de apps **em produção** na **Google Play** e **App Store** | push notifications (FCM e OneSignal) | flavors por ambiente | Internacionalização (i18n) e localização (l10n)
 - **Outras:** **Git** | GitHub | GitLab | **Scrum** | Kanban | squads multifuncionais | Jira | Figma | Astro
 
 ---
@@ -53,8 +53,8 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência** em apps Android
 **Responsabilidades Técnicas:** **Assumi o app na fase de MVP**, em multirepo, ainda sem testes automatizados nem code review, e **preparei a base para o produto escalar**.
 
 - **Qualidade e testes:** defini a estratégia e os padrões de teste adotados pelo time, levando a base a **alta cobertura de testes automatizados** (unitários e de widget em Mocktail). **Bugs e regressões pararam de voltar**, o time **reduziu retrabalho** e a empresa ganhou confiança para **levar o produto ao piloto com clientes e ao pré-lançamento**.
-- **Code review e produção:** **introduzi a prática de code review** no time mobile, atuando como revisor, e investiguei os incidentes reportados durante o piloto.
-- **Arquitetura:** **conduzi a migração de multirepo para monorepo** em Dart Workspace e **estruturei o crescimento do app de cinco telas para 31 módulos de negócio** em packages, refatorando as telas existentes para a Clean Architecture do projeto. O que antes exigia publicar vários repositórios passou a **sair em um PR** e acabaram as **quebras por descompasso de versão**. **Riverpod** no app e **BLoC** no SDK do assistente de IA, que **mantive e evoluí**; **design system e SDK isolados em packages** compartilhados entre os apps.
+- **Code review e produção:** **introduzi a prática de code review** no time mobile, atuando como revisor: **menos bugs chegaram à produção** e o time passou a seguir os padrões sem depender de mim. Investiguei os incidentes reportados durante o piloto.
+- **Arquitetura:** **conduzi a migração de multirepo para monorepo** em Dart Workspace e **estruturei o crescimento do app de cinco telas para 31 módulos de negócio** em packages, refatorando as telas existentes para Clean Architecture por módulo (data, domain, presentation). O que antes exigia publicar vários repositórios passou a **sair em um PR**, as entregas ficaram mais rápidas e acabaram as **quebras por descompasso de versão**. **Riverpod** no app e **BLoC** no SDK do assistente de IA, que **mantive e evoluí**; **ampliei o design system** e o isolei, com o SDK, em packages compartilhados entre os apps.
 - **Teleconsulta e onboarding:** **mantive e evoluí** o módulo de videochamada; **integrei a biometria facial e o OCR de documentos** (FaceTec, SDK nativo em Kotlin/Swift) no cadastro do médico, com tratamento de falha e cancelamento de captura; **tratei erro e reautenticação** no fluxo de **assinatura digital**.
 
 ---
@@ -67,7 +67,12 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência** em apps Android
 
 **Projeto:** Aplicativo mobile para afiliados e produtores digitais, com gestão de vendas, comissões e saques, relatórios, métricas de desempenho e notificações em tempo real. **1M+ downloads** · nota 4,8/5 na Google Play.
 
-**Responsabilidades Técnicas:** **Evoluí** o app em Flutter com **Clean Architecture e BLoC**. Como o app movimenta comissões e saques, **implementei a autenticação biométrica e o armazenamento seguro** de credenciais, e **reduzi os crashes** investigando as falhas no Crashlytics. Integrei APIs REST, Firebase (Analytics, Remote Config), SQLite, push via OneSignal e FCM, i18n e gráficos interativos, com testes unitários e code review. Build e publicação em **Codemagic** com GitLab.
+**Responsabilidades Técnicas:** **Evoluí** o app com **Clean Architecture, BLoC e testes unitários**, publicado via **Codemagic**.
+
+- **Operação internacional:** **desenvolvi a vitrine de produtos internacionais**, com comissão por moeda e liberação controlada por Remote Config, e o **cadastro de conta bancária internacional**, com validação de IBAN/SWIFT, para o afiliado promover produtos de fora e sacar em outra moeda.
+- **Saque:** como o app movimenta comissões e saques, **desenvolvi o cancelamento de saque** e o filtro por moeda, e mantive a autenticação biométrica e o armazenamento seguro de credenciais.
+- **Tratamento de erro:** **migrei os datasources para o novo cliente de API** e **centralizei o tratamento de erro** (sem internet, timeout, sessão expirada, usuário descredenciado), com stack trace no Crashlytics para acompanhar o crash-free rate.
+- **Padrões do time:** **criei as regras de lint do projeto**, refatorei os testes de quase todas as features e **escrevi a documentação de onboarding**, padronizando o código e a entrada de novos devs no projeto.
 
 ---
 
@@ -104,9 +109,9 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência** em apps Android
 
 <sub>Voluntário &nbsp;·&nbsp; Julho/2026 até o momento</sub>
 
-**Descrição da Empresa:** Clube de serviço do Lions Clubs International, associação sem fins lucrativos; desenvolvo e opero a plataforma como voluntário, sem remuneração.
+**Descrição da Empresa:** Clube de serviço do Lions Clubs International; desenvolvo e opero a plataforma como voluntário, sem remuneração.
 
-**Projeto:** Plataforma multi-clube que apura em tempo real o prêmio de associado mais atuante de clubes de serviço, substituindo a apuração manual em atas de papel por um ranking público e auditável. Lançamento de presença pelo celular, extrato individual por associado, tabela de pontos configurável por clube e exportação do ano leonístico. Em piloto no Lions Clube de Ji-Paraná/RO, com expansão prevista para outros clubes.
+**Projeto:** Plataforma multi-clube que apura em tempo real o prêmio de associado mais atuante de clubes de serviço, substituindo a apuração manual em atas de papel por um ranking público e auditável. Em piloto no Lions Clube de Ji-Paraná/RO, com expansão prevista para outros clubes.
 
 **Demo:** [https://lions-pontos.tektonsoftwares.workers.dev/demo](https://lions-pontos.tektonsoftwares.workers.dev/demo)<br>
 **Código:** [https://github.com/leandrorochaadm/lions-club-points](https://github.com/leandrorochaadm/lions-club-points)
@@ -115,4 +120,4 @@ Desenvolvedor **Flutter** com **mais de 6 anos de experiência** em apps Android
 
 - **Frontend:** concebi e desenvolvi end-to-end em **Flutter Web** (PWA instalável) com Clean Architecture e Riverpod.
 - **Backend e dados:** **Supabase/Postgres** com modelagem **multi-tenant**; como cada clube só pode ver os próprios dados, o isolamento é garantido por **Row Level Security no banco** e não na aplicação. Deploy em **Cloudflare Workers**.
-- **Qualidade e operação:** o ranking define um prêmio e erro de cálculo não é aceitável, então sustento **alta cobertura de testes automatizados** com **CI barrando merge** que a reduza. Como não há QA nem suporte, acompanho erro em produção no **Sentry** e uso real no **PostHog**. O clube piloto confia no ranking o bastante para **abandonar a apuração em papel**.
+- **Qualidade e operação:** o ranking define um prêmio e erro de cálculo não é aceitável, então sustento **alta cobertura de testes automatizados** com **CI barrando merge** que a reduza. Como não há QA nem suporte, acompanho erro em produção no **Sentry** e uso real no **PostHog**. O clube piloto **trocou a apuração em papel pelo ranking**.

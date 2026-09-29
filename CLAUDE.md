@@ -159,6 +159,7 @@ São três camadas, **nesta ordem de precedência**. Elas aparecem abaixo na mes
 Não reintroduzir como conquista dele:
 
 - **Nunca liderou formalmente** (sem tech lead, sem mentoria formal). A senioridade é técnica.
+- **Monetizze:** a autenticação biométrica e o armazenamento seguro de credenciais **já existiam**; ele deu manutenção. Nunca `implementei` (corrigido por ele em Setembro/2026).
 - **Claro Pay / Amaris:** implementou spec pronta. Não concebeu o módulo nem decidiu a arquitetura de microapps.
 - **Clyvo:** o assistente de IA por voz é de outra pessoa. WebRTC/LiveKit e CallKit/IncomingCall ele **refatorou o que já existia** — nas Experiências, entra como "manutenção e evolução", nunca como autoria. **Em Habilidades, decisão dele (Agosto/2026): listar direto, sem ressalva**, depois de ouvir a objeção. Não reabra; o lastro para a entrevista é refatoração, não implementação inicial. Não há CI no mobile. Não há pagamento in-app. `apps/vet` está vazio, não é um segundo app.
 - **Clyvo — o que é dele, e pode ser afirmado com força:** conduziu a migração multirepo → monorepo (Dart Workspace, 31 módulos); pegou uma base sem nenhum teste e a levou a 6.800 testes e 85% de cobertura, definindo a estratégia e os padrões do time; introduziu a prática de code review no time mobile; biometria facial e OCR de documentos (FaceTec — **não usar ML Kit**, corrigido por ele em Agosto/2026); assinatura digital com PDF; design system e SDK de chat; monitoramento e investigação de incidentes em produção com Datadog e Crashlytics.

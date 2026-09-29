@@ -31,7 +31,7 @@
   pdftitle={Leandro Rocha de Brito — Desenvolvedor Mobile Flutter Pleno/Sênior},
   pdfauthor={Leandro Rocha de Brito},
   pdfsubject={Currículo — Desenvolvedor Mobile Flutter Pleno/Sênior},
-  pdfkeywords={Flutter, Dart, Mobile, Clean Architecture, SOLID, Riverpod, BLoC, ValueNotifier, ChangeNotifier, MVVM, Monorepo, Microapps, Testes, Testes de integração, TDD, Segurança mobile, Firebase, Firebase Authentication, Supabase, Claude Code, IA, Observabilidade, Monitoramento, Apps em produção, Sentry, PostHog, Squad, Scrum, Ágil, FaceTec, OCR},
+  pdfkeywords={Flutter, Dart, Mobile, Clean Architecture, SOLID, Riverpod, BLoC, ValueNotifier, ChangeNotifier, MVVM, Monorepo, Microapps, Testes, Testes de integração, TDD, Segurança mobile, Firebase, Firebase Authentication, Supabase, Claude Code, IA, Observabilidade, Monitoramento, Apps em produção, Sentry, PostHog, Firebase Crashlytics, Crash-free rate, Codemagic, GoRouter, Get It, Flutter Secure Storage, Biometria, Flavors, Design System, Squad, Scrum, Ágil, FaceTec, OCR},
   pdflang={pt-BR}
 }
 \usepackage{parskip}
@@ -157,7 +157,7 @@
 % =================== APRESENTAÇÃO ===================
 \sect{Apresentação}
 
-Desenvolvedor \textbf{Flutter} com \textbf{mais de 6 anos de experiência} em apps Android e iOS para vendas online, saúde e fintech, incluindo projetos para a \textbf{Claro} e \textbf{apps com mais de 1 milhão de downloads.} No último projeto, assumi um \textbf{MVP sem nenhum teste automatizado} e defini a estratégia de testes do time: \textbf{bugs e regressões pararam de voltar} e o produto chegou ao piloto com clientes. Conduzi a \textbf{migração para monorepo} e introduzi a prática de \textbf{code review} no time mobile.
+Desenvolvedor \textbf{Flutter} há \textbf{mais de 6 anos}, em apps para fintech, vendas digitais e saúde, incluindo \textbf{Claro~Pay} e \textbf{Monetizze}, ambos com \textbf{mais de 1 milhão de downloads.} Na Clyvo, assumi um \textbf{MVP sem nenhum teste automatizado}: com a estratégia de testes que defini, \textbf{bugs e regressões pararam de voltar} e o produto chegou ao \textbf{piloto com clientes.} Migrei o app para monorepo e introduzi o code review: \textbf{as entregas aceleraram} e o time ganhou \textbf{autonomia para seguir os padrões.}
 
 % =================== HABILIDADES ===================
 \sect{Habilidades}
@@ -166,11 +166,11 @@ Desenvolvedor \textbf{Flutter} com \textbf{mais de 6 anos de experiência} em ap
   \item \lbl{Flutter e Dart:} \textbf{BLoC} | \textbf{Riverpod} | \textbf{ValueNotifier} | \textbf{ChangeNotifier} | Provider | Get It | Dio | DartZ | Hive | Flutter Secure Storage | fl\_chart | Google Maps | Flutter Web (PWA) | Design System próprio | Freezed | GoRouter | build\_runner
   \item \lbl{Recursos nativos:} \textbf{integração de SDKs e plugins nativos} escritos em Kotlin/Swift em apps Flutter para \textbf{Android} e \textbf{iOS} | \textbf{Biometria facial e OCR de documentos (FaceTec)} | \textbf{segurança mobile} (armazenamento seguro, autenticação biométrica, reautenticação)
   \item \lbl{Arquitetura:} \textbf{Clean Architecture} | \textbf{SOLID} | MVVM | MVC | \textbf{Monorepo (Dart Workspace)} | \textbf{modularização em packages} | microapps | MultiRepo | modelagem multi-tenant
-  \item \lbl{IA no desenvolvimento:} \textbf{Claude Code} como apoio ao desenvolvimento, com \textbf{regras de projeto versionadas} para manter a aderência ao padrão do time e \textbf{validação em code review}
+  \item \lbl{IA no desenvolvimento:} \textbf{Claude Code} com \textbf{regras de projeto versionadas} e \textbf{validação em code review}
   \item \lbl{Qualidade e observabilidade:} \textbf{Testes unitários e de widget (Mocktail)} | \textbf{testes de integração} | \textbf{TDD} | \textbf{monitoramento e investigação de incidentes em produção} (\textbf{Firebase Crashlytics}, \textbf{Sentry}) | \textbf{análise de comportamento e produto} (\textbf{PostHog}, Microsoft Clarity) | \textbf{CI/CD (GitHub Actions, Codemagic)} | \textbf{Git Flow} e \textbf{trunk-based} | code review
   \item \lbl{Firebase:} Authentication | Analytics | Firestore | Storage | Remote Config | Cloud Messaging (FCM)
   \item \lbl{Backend e dados:} API REST | \textbf{Supabase / PostgreSQL} (Row Level Security, migrations versionadas) | SQLite | Cloudflare Workers
-  \item \lbl{Distribuição e localização:} publicação, monitoramento e manutenção de apps \textbf{em produção} na \textbf{Google Play} e \textbf{App Store} | push notifications (FCM e OneSignal) | Internacionalização (i18n) e localização (l10n)
+  \item \lbl{Distribuição e localização:} publicação, monitoramento e manutenção de apps \textbf{em produção} na \textbf{Google Play} e \textbf{App Store} | push notifications (FCM e OneSignal) | flavors por ambiente | Internacionalização (i18n) e localização (l10n)
   \item \lbl{Outras:} \textbf{Git} | GitHub | GitLab | \textbf{Scrum} | Kanban | squads multifuncionais | Jira | Figma | Astro
 \end{tight}
 
@@ -187,8 +187,8 @@ Desenvolvedor \textbf{Flutter} com \textbf{mais de 6 anos de experiência} em ap
 \fld{Responsabilidades Técnicas:} \textbf{Assumi o app na fase de MVP,} em multirepo, ainda sem testes automatizados nem code review, e \textbf{preparei a base para o produto escalar.}
 \begin{tight}
   \item \lbl{Qualidade e testes:} defini a estratégia e os padrões de teste adotados pelo time, levando a base a \textbf{alta cobertura de testes automatizados} (unitários e de widget em Mocktail). \textbf{Bugs e regressões pararam de voltar,} o time \textbf{reduziu retrabalho} e a empresa ganhou confiança para \textbf{levar o produto ao piloto com clientes e ao pré-lançamento.}
-  \item \lbl{Code review e produção:} \textbf{introduzi a prática de code review} no time mobile, atuando como revisor, e investiguei os incidentes reportados durante o piloto.
-  \item \lbl{Arquitetura:} \textbf{conduzi a migração de multirepo para monorepo} em Dart Workspace e \textbf{estruturei o crescimento do app de cinco telas para 31 módulos de negócio} em packages, refatorando as telas existentes para a Clean Architecture do projeto. O que antes exigia publicar vários repositórios passou a \textbf{sair em um PR} e acabaram as \textbf{quebras por descompasso de versão.} \textbf{Riverpod} no app e \textbf{BLoC} no SDK do assistente de IA, que \textbf{mantive e evoluí}; \textbf{design system e SDK isolados em packages} compartilhados entre os apps.
+  \item \lbl{Code review e produção:} \textbf{introduzi a prática de code review} no time mobile, atuando como revisor: \textbf{menos bugs chegaram à produção} e o time passou a seguir os padrões sem depender de mim. Investiguei os incidentes reportados durante o piloto.
+  \item \lbl{Arquitetura:} \textbf{conduzi a migração de multirepo para monorepo} em Dart Workspace e \textbf{estruturei o crescimento do app de cinco telas para 31 módulos de negócio} em packages, refatorando as telas existentes para Clean Architecture por módulo (data, domain, presentation). O que antes exigia publicar vários repositórios passou a \textbf{sair em um PR,} as entregas ficaram mais rápidas e acabaram as \textbf{quebras por descompasso de versão.} \textbf{Riverpod} no app e \textbf{BLoC} no SDK do assistente de IA, que \textbf{mantive e evoluí}; \textbf{ampliei o design system} e o isolei, com o SDK, em packages compartilhados entre os apps.
   \item \lbl{Teleconsulta e onboarding:} \textbf{mantive e evoluí} o módulo de videochamada; \textbf{integrei a biometria facial e o OCR de documentos} (FaceTec, SDK nativo em Kotlin/Swift) no cadastro do médico, com tratamento de falha e cancelamento de captura; \textbf{tratei erro e reautenticação} no fluxo de \textbf{assinatura digital}.
 \end{tight}
 
@@ -198,7 +198,13 @@ Desenvolvedor \textbf{Flutter} com \textbf{mais de 6 anos de experiência} em ap
 
 \fld{Projeto:} Aplicativo mobile para afiliados e produtores digitais, com gestão de vendas, comissões e saques, relatórios, métricas de desempenho e notificações em tempo real. \textbf{1M+ downloads} · nota 4,8/5 na Google Play.
 
-\fld{Responsabilidades Técnicas:} \textbf{Evoluí} o app em Flutter com \textbf{Clean Architecture e BLoC}. Como o app movimenta comissões e saques, \textbf{implementei a autenticação biométrica e o armazenamento seguro} de credenciais, e \textbf{reduzi os crashes} investigando as falhas no Crashlytics. Integrei APIs REST, Firebase (Analytics, Remote Config), SQLite, push via OneSignal e FCM, i18n e gráficos interativos, com testes unitários e code review. Build e publicação em \textbf{Codemagic} com GitLab.
+\fld{Responsabilidades Técnicas:} \textbf{Evoluí} o app com \textbf{Clean Architecture, BLoC e testes unitários}, publicado via \textbf{Codemagic}.
+\begin{tight}
+  \item \lbl{Operação internacional:} \textbf{desenvolvi a vitrine de produtos internacionais,} com comissão por moeda e liberação controlada por Remote Config, e o \textbf{cadastro de conta bancária internacional,} com validação de IBAN/SWIFT, para o afiliado promover produtos de fora e sacar em outra moeda.
+  \item \lbl{Saque:} como o app movimenta comissões e saques, \textbf{desenvolvi o cancelamento de saque} e o filtro por moeda, e mantive a autenticação biométrica e o armazenamento seguro de credenciais.
+  \item \lbl{Tratamento de erro:} \textbf{migrei os datasources para o novo cliente de API} e \textbf{centralizei o tratamento de erro} (sem internet, timeout, sessão expirada, usuário descredenciado), com stack trace no Crashlytics para acompanhar o crash-free rate.
+  \item \lbl{Padrões do time:} \textbf{criei as regras de lint do projeto,} refatorei os testes de quase todas as features e \textbf{escrevi a documentação de onboarding,} padronizando o código e a entrada de novos devs no projeto.
+\end{tight}
 
 \job{\href{https://sof.to/}{SOFTO}}{Desenvolvedor Flutter}{{\nokern PJ}}{Janeiro/2022 até Outubro/2023}{\href{https://sof.to/}{https://sof.to} · \href{https://www.thefaapp.org}{https://thefaapp.org}}
 
@@ -226,9 +232,9 @@ Desenvolvedor \textbf{Flutter} com \textbf{mais de 6 anos de experiência} em ap
 
 \job{\href{http://lions-pontos.tektonsoftwares.workers.dev}{Lions Pontos}}{Lions Club de Ji-Paraná Centro}{Voluntário}{Julho/2026 até o momento}{}
 
-\fld{Descrição da Empresa:} Clube de serviço do Lions Clubs International, associação sem fins lucrativos; desenvolvo e opero a plataforma como voluntário, sem remuneração.
+\fld{Descrição da Empresa:} Clube de serviço do Lions Clubs International; desenvolvo e opero a plataforma como voluntário, sem remuneração.
 
-\fld{Projeto:} Plataforma multi-clube que apura em tempo real o prêmio de associado mais atuante de clubes de serviço, substituindo a apuração manual em atas de papel por um ranking público e auditável. Lançamento de presença pelo celular, extrato individual por associado, tabela de pontos configurável por clube e exportação do ano leonístico. Em piloto no Lions Clube de Ji-Paraná/RO, com expansão prevista para outros clubes.
+\fld{Projeto:} Plataforma multi-clube que apura em tempo real o prêmio de associado mais atuante de clubes de serviço, substituindo a apuração manual em atas de papel por um ranking público e auditável. Em piloto no Lions Clube de Ji-Paraná/RO, com expansão prevista para outros clubes.
 
 \fld{Demo:} \href{http://lions-pontos.tektonsoftwares.workers.dev/demo}{https://lions-pontos.tektonsoftwares.workers.dev/demo}\\
 \fld{Código:} \href{http://github.com/leandrorochaadm/lions-club-points}{https://github.com/leandrorochaadm/lions-club-points}
@@ -237,7 +243,7 @@ Desenvolvedor \textbf{Flutter} com \textbf{mais de 6 anos de experiência} em ap
 \begin{tight}
   \item \lbl{Frontend:} concebi e desenvolvi end-to-end em \textbf{Flutter Web} (PWA instalável) com Clean Architecture e Riverpod.
   \item \lbl{Backend e dados:} \textbf{Supabase/Postgres} com modelagem \textbf{multi-tenant}; como cada clube só pode ver os próprios dados, o isolamento é garantido por \textbf{Row Level Security no banco} e não na aplicação. Deploy em \textbf{Cloudflare Workers}.
-  \item \lbl{Qualidade e operação:} o ranking define um prêmio e erro de cálculo não é aceitável, então sustento \textbf{alta cobertura de testes automatizados} com \textbf{CI barrando merge} que a reduza. Como não há QA nem suporte, acompanho erro em produção no \textbf{Sentry} e uso real no \textbf{PostHog}. O clube piloto confia no ranking o bastante para \textbf{abandonar a apuração em papel.}
+  \item \lbl{Qualidade e operação:} o ranking define um prêmio e erro de cálculo não é aceitável, então sustento \textbf{alta cobertura de testes automatizados} com \textbf{CI barrando merge} que a reduza. Como não há QA nem suporte, acompanho erro em produção no \textbf{Sentry} e uso real no \textbf{PostHog}. O clube piloto \textbf{trocou a apuração em papel pelo ranking.}
 \end{tight}
 
 \end{document}
