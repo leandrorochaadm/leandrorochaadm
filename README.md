@@ -22,21 +22,21 @@
 
 ## Apresentação
 
-Desenvolvedor **Flutter** há **mais de 6 anos**, em apps para fintech, vendas digitais e saúde, incluindo **Claro Pay** e **Monetizze**, ambos com **mais de 1 milhão de downloads**. Na Clyvo, assumi um **MVP sem nenhum teste automatizado**: com a estratégia de testes que defini, **bugs e regressões pararam de voltar** e o produto chegou ao **piloto com clientes**. Migrei o app para monorepo e introduzi o code review: **as entregas aceleraram** e o time ganhou **autonomia para seguir os padrões**.
+Desenvolvedor **mobile Flutter** há **mais de 6 anos**, no **desenvolvimento de aplicativos Android e iOS** para fintech, vendas digitais e saúde, incluindo **Claro Pay** e **Monetizze**, ambos com **mais de 1 milhão de downloads**. Na Clyvo, assumi um **MVP sem nenhum teste automatizado**: com a estratégia de testes que defini, **bugs e regressões pararam de voltar** e o produto chegou ao **piloto com clientes**. Migrei o app para monorepo e introduzi a **revisão de código** (code review): **as entregas aceleraram** e o time ganhou **autonomia para seguir os padrões**. No **trabalho em equipe** com squads multifuncionais, assumo também a **resolução de problemas em produção**, monitorando os apps com Crashlytics e Sentry. Projeto, implemento e mantenho **módulos de produto**, conduzo **testes unitários, de integração e de liberação**, reviso e avalio o **código gerado por IA**, mantenho o **ambiente de desenvolvimento**, **construo e publico os apps** nas lojas e participo das **cerimônias ágeis**, garantindo que o produto atenda aos **requisitos de negócio**.
 
 ---
 
 ## Habilidades
 
-- **Flutter e Dart:** **BLoC** | **Riverpod** | **ValueNotifier** | **ChangeNotifier** | Provider | Get It | Dio | DartZ | Hive | Flutter Secure Storage | fl_chart | Google Maps | Flutter Web (PWA) | Design System próprio | Freezed | GoRouter | build_runner
+- **Flutter e Dart:** gerenciamento de estado com **BLoC**, **Riverpod**, **ValueNotifier**, **ChangeNotifier** e Provider | Get It | Dio | DartZ | Hive | Flutter Secure Storage | fl_chart | Google Maps | Flutter Web (PWA) | Design System próprio | Freezed | GoRouter | build_runner
 - **Recursos nativos:** **integração de SDKs e plugins nativos** escritos em Kotlin/Swift em apps Flutter para **Android** e **iOS** | **Biometria facial e OCR de documentos (FaceTec)** | **segurança mobile** (armazenamento seguro, autenticação biométrica, reautenticação)
-- **Arquitetura:** **Clean Architecture** | **SOLID** | MVVM | MVC | **Monorepo (Dart Workspace)** | **modularização em packages** | microapps | MultiRepo | modelagem multi-tenant
-- **IA no desenvolvimento:** **Claude Code** com **regras de projeto versionadas** e **validação em code review**
-- **Qualidade e observabilidade:** **Testes unitários e de widget (Mocktail)** | **testes de integração** | **TDD** | **monitoramento e investigação de incidentes em produção** (**Firebase Crashlytics**, **Sentry**) | **análise de comportamento e produto** (**PostHog**, Microsoft Clarity) | **CI/CD (GitHub Actions, Codemagic)** | **Git Flow** e **trunk-based** | code review
+- **Arquitetura de software:** **Clean Architecture** | **SOLID**, padrões de projeto e boas práticas de desenvolvimento | arquitetura de aplicativos móveis | MVVM | MVC | **Monorepo (Dart Workspace)** | **modularização em packages** | microapps | MultiRepo | modelagem multi-tenant
+- **IA no desenvolvimento:** **Claude Code** com **regras de projeto versionadas** e **revisão do código gerado por IA** em code review
+- **Qualidade e observabilidade:** **Testes unitários e de widget (Mocktail)** | **testes de integração** | **TDD** | **monitoramento, investigação e resolução de problemas em produção** (**Firebase Crashlytics**, **Sentry**) | **análise de comportamento e produto** (**PostHog**, Microsoft Clarity) | **CI/CD (GitHub Actions, Codemagic)** | **Git Flow** e **trunk-based** | revisão de código (code review)
 - **Firebase:** Authentication | Analytics | Firestore | Storage | Remote Config | Cloud Messaging (FCM)
-- **Backend e dados:** API REST | **Supabase / PostgreSQL** (Row Level Security, migrations versionadas) | SQLite | Cloudflare Workers
-- **Distribuição e localização:** publicação, monitoramento e manutenção de apps **em produção** na **Google Play** e **App Store** | push notifications (FCM e OneSignal) | flavors por ambiente | Internacionalização (i18n) e localização (l10n)
-- **Outras:** **Git** | GitHub | GitLab | **Scrum** | Kanban | squads multifuncionais | Jira | Figma | Astro
+- **Backend e dados:** integração com APIs REST com autenticação JWT | **Supabase / PostgreSQL** (Row Level Security, migrations versionadas) | SQLite | Cloudflare Workers (JavaScript/TypeScript)
+- **Distribuição e localização:** **desenvolvimento de aplicativos móveis**, publicação em lojas de aplicativos, monitoramento e manutenção de apps **em produção** na **Google Play** e **App Store** (Xcode) | push notifications (FCM e OneSignal) | flavors por ambiente | Internacionalização (i18n) e localização (l10n)
+- **Outras:** **Git** (versionamento de código e controle de versão) | GitHub | GitLab | **Metodologias ágeis** (**Scrum**, Kanban) | trabalho em equipe (squads multifuncionais) | Jira | Figma | Astro
 
 ---
 
@@ -84,7 +84,7 @@ Desenvolvedor **Flutter** há **mais de 6 anos**, em apps para fintech, vendas d
 
 **Projeto [FA app](https://www.thefaapp.org):** Aplicativo global que conecta médicos, cientistas e famílias na luta contra a Ataxia de Friedreich, doença neurodegenerativa rara, **traduzido para 8 idiomas**. **10K+ downloads** · nota 4,6/5.
 
-**Responsabilidades Técnicas:** **Refatorei a camada visual de 100% das telas** do app, em Flutter com **MVVM, gerência de estado em ChangeNotifier** e **Firebase Authentication**, melhorando **usabilidade e acessibilidade** e mantendo o layout íntegro nos **8 idiomas**.
+**Responsabilidades Técnicas:** **Refatorei a camada visual de 100% das telas** do app, em Flutter com **MVVM, gerenciamento de estado em ChangeNotifier** e **Firebase Authentication**, com foco na **experiência do usuário**: melhorei **usabilidade e acessibilidade** e mantive o layout íntegro nos **8 idiomas**.
 
 ---
 
@@ -98,7 +98,7 @@ Desenvolvedor **Flutter** há **mais de 6 anos**, em apps para fintech, vendas d
 
 **Responsabilidades Técnicas:**
 
-- **Arquitetura:** implementei o módulo dentro da **arquitetura de microapps** do projeto, com **monorepo e módulos isolados em packages**, Clean Architecture, gerência de estado em **ValueNotifier** e integração com Firebase e APIs REST.
+- **Arquitetura:** implementei o módulo dentro da **arquitetura de microapps** do projeto, com **monorepo e módulos isolados em packages**, Clean Architecture, gerenciamento de estado em **ValueNotifier** e integração com Firebase e APIs REST.
 - **Qualidade:** como erro em contratação ou cancelamento de seguro gera prejuízo financeiro e disputa com o cliente, adotei **TDD** desde o início do módulo, com testes unitários e de widget cobrindo esses fluxos.
 
 ---
