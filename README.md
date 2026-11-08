@@ -36,7 +36,7 @@ Na Clyvo, startup de telemedicina, entrei com o app nas primeiras telas e **cres
 - **IA no desenvolvimento:** **Claude Code** com **agentes de IA** executando planos, skills próprias e MCP | levantamento de requisitos, descrição das tarefas no Jira e modelagem das regras de negócio do domínio (**DDD**) | **regras versionadas** adotadas pelo time: código no padrão e mais rápido | **hooks** pre-commit/pre-push: só entra com testes e **revisão**
 - **Qualidade e observabilidade:** **Testes unitários e de widget (flutter_test, Mocktail, bloc_test)** | **testes de integração** | **TDD** | **monitoramento e resolução de problemas em produção** (**Firebase Crashlytics**, **Sentry**) | **análise de comportamento e produto** (**PostHog**, Microsoft Clarity) | **CI/CD (GitHub Actions, Codemagic)** | **Git Flow** e **trunk-based**
 - **Firebase:** Authentication | Analytics | Firestore | Storage | Remote Config | Cloud Messaging (FCM)
-- **Backend e dados:** integração com APIs REST com autenticação JWT | **Supabase / PostgreSQL** (Row Level Security, migrations versionadas) | SQLite | Cloudflare Workers (JavaScript/TypeScript)
+- **Backend e dados:** integração com APIs REST com autenticação JWT | **Supabase / PostgreSQL** (Row Level Security, migrations versionadas) | **PocketBase** (API Rules) | SQLite | Cloudflare Workers (JavaScript/TypeScript)
 - **Distribuição e localização:** **desenvolvimento de aplicativos móveis**, publicação em lojas de aplicativos, monitoramento e manutenção de apps **em produção** na **Google Play** e **App Store** (Xcode) | push notifications (FCM e OneSignal) | flavors por ambiente | Internacionalização (i18n) e localização (l10n)
 - **Outras:** **Git** (controle de versão) | GitHub | GitLab | **Metodologias ágeis** (**Scrum**, Kanban) | Jira | Figma | Astro
 
@@ -113,12 +113,12 @@ Na Clyvo, startup de telemedicina, entrei com o app nas primeiras telas e **cres
 
 **Descrição da Empresa:** Clube de serviço do Lions Clubs International; trabalho voluntário, sem remuneração.
 
-**Projeto:** Plataforma multi-clube que apura em tempo real o prêmio de associado mais atuante de clubes de serviço, trocando a apuração em atas de papel por um ranking público e auditável. Em piloto no Lions Clube de Ji-Paraná/RO.
+**Projeto:** Plataforma multi-clube que apura em tempo real o prêmio de associado mais atuante, com ranking público e auditável. O clube piloto, de Ji-Paraná/RO, trocou as atas de papel pelo ranking, e a expansão prevista é a região norte.
 
 **Demo:** [lions-pontos.tektonsoftwares.workers.dev/demo](https://lions-pontos.tektonsoftwares.workers.dev/demo) &nbsp; **Código:** [github.com/leandrorochaadm/lions-club-points](https://github.com/leandrorochaadm/lions-club-points)
 
 **Responsabilidades Técnicas:** **Único responsável pelas decisões técnicas, do modelo de dados ao deploy.**
 
-- **Frontend:** concebi e desenvolvi end-to-end em **Flutter Web** (PWA instalável) com Clean Architecture e Riverpod.
-- **Backend e dados:** **Supabase/Postgres** com modelagem **multi-tenant**; como cada clube só pode ver os próprios dados, o isolamento é garantido por **Row Level Security no banco** e não na aplicação. Deploy em **Cloudflare Workers**.
-- **Qualidade e operação:** o ranking define um prêmio e erro de cálculo não é aceitável, então sustento **alta cobertura de testes automatizados** com **CI barrando merge** que a reduza. Acompanho erro no **Sentry** e uso no **PostHog**. O clube piloto **trocou a apuração em papel pelo ranking**.
+- **Frontend:** concebi e desenvolvi o PWA em **Flutter Web**, com Clean Architecture e Riverpod, em **Cloudflare Workers**.
+- **Backend e dados:** a regra de negócio estava duplicada em SQL e Dart; para deixá-la só no domain, migrei de Supabase para **PocketBase** numa **VPS própria**, com os dados do piloto. O isolamento **multi-tenant** entre clubes fica nas **API Rules**.
+- **Qualidade e operação:** o ranking define um prêmio e erro de cálculo não é aceitável, então sustento **alta cobertura de testes automatizados**, com **CI barrando merge** que a reduza ou quebre o isolamento. Erro no **Sentry**, uso no **PostHog**.
